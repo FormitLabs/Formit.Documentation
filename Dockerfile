@@ -1,13 +1,12 @@
-FROM node:lts
+FROM node:16-alpine
 
 WORKDIR /app
 
-EXPOSE 3000 8888
-
-COPY /docs /app/docs
-
-COPY /blog  /app/blog
+COPY . .
 
 RUN npm install
+RUN npm run build
 
-CMD ["npm", "start"]
+EXPOSE 3000
+CMD ["npm", "run", "serve"]
+#CMD ["npm", "run", "serve", "--", "--build"]

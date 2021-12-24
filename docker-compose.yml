@@ -1,0 +1,16 @@
+version: "3"
+
+services:
+  docusaurus:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+      # image: 
+    ports:
+      - '3000:3000'
+    networks:
+      - inner-network
+
+networks:
+  inner-network:
+    driver: bridge    
