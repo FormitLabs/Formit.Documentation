@@ -12,7 +12,7 @@ const config = {
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
-  favicon: "img/favicon.ico",
+  favicon: "img/favicon.svg",
   organizationName: "facebook", // Usually your GitHub org/user name.
   projectName: "docusaurus", // Usually your repo name.
 
@@ -50,7 +50,7 @@ const config = {
             items: [
               {
                 label: "Tutorial",
-                to: "/docs/Добро%20пожаловать/Как%20начать",
+                to: "/docs/Добро пожаловать/Как начать",
               },
             ],
           },
