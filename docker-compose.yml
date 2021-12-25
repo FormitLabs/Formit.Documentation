@@ -2,15 +2,10 @@ version: "3"
 
 services:
   docusaurus:
-    build: 
-      context: .
-      dockerfile: Dockerfile
-      # image: 
+    image: ghcr.io/altecsystems/amaterasudocumentation_docusaurus:latest 
+    container_name: docusaurus
     ports:
       - '3000:3000'
     networks:
       - inner-network
-
-networks:
-  inner-network:
-    driver: bridge    
+  
