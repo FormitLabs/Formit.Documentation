@@ -38,11 +38,18 @@ const config = {
           src: "img/altecLogo.svg",
         },
         items: [
-          { label: "Tutorial", to: "/docs/Добро пожаловать/как начать" },
+          { label: "Руководство пользователя", to: "/docs/Добро пожаловать/Как начать" },
+          { label: "Методические указания", to: "/docs/Добро пожаловать/Методические указания" },
+          { label: "Что нового", to: "/docs/Добро пожаловать/Методические указания"},
+          { label: "Ответы на вопросы", to: "/docs/Добро пожаловать/Методические указания" }
         ],
       },
       footer: {
         style: "dark",
+        logo: {
+          alt: "Altec Insolations",
+          src: "img/altecLogo.svg",
+        },
         links: [
           {
             title: "Docs",
@@ -54,32 +61,52 @@ const config = {
             ],
           },
           {
-            title: "Community",
+            title: null,
             items: [
               {
-                label: "Stack Overflow",
+                label: "Корпоративный сайт",
                 href: "https://stackoverflow.com/questions/tagged/docusaurus",
               },
               {
-                label: "Discord",
+                label: "Из 2D в BIM",
                 href: "https://discordapp.com/invite/docusaurus",
               },
               {
-                label: "Twitter",
+                label: "Решение по Инсоляции КЕО",
+                href: "https://twitter.com/docusaurus",
+              },
+              {
+                label: "Разработка Altec",
                 href: "https://twitter.com/docusaurus",
               },
             ],
           },
           {
-            title: "Больше",
+            title: null,
             items: [
+              // {
+              //   label: "Altec Systems",
+              //   to: "https://altecsystems.ru/",
+              // },
+              // {
+              //   label: "Altec Insolations",
+              //   to: "https://insolations.ru/",
+              // },
               {
-                label: "Altec Systems",
+                label: "О сервисе",
                 to: "https://altecsystems.ru/",
               },
               {
-                label: "Altec Insolations",
-                to: "https://insolations.ru/",
+                label: "Руководство",
+                to: "https://altecsystems.ru/",
+              },
+              {
+                label: "Вопросы",
+                to: "https://altecsystems.ru/",
+              },
+              {
+                label: "Обратная связь",
+                to: "https://altecsystems.ru/",
               },
             ],
           },
