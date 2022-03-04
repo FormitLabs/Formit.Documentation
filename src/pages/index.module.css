@@ -18,6 +18,60 @@
 
 .buttons {
   display: flex;
+  flex-direction: column;
+}
+
+.button-for-resources {
+  background: #324CD4;
+  border-radius: 4px;
+  width: 320px;
+  height: 60px;
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin: 30px 0;
+  display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.button-for-resources:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.header-text {
+  width: 720px;
+  height: 215px;
+  font-weight: 600;
+  font-size: 58px;
+  line-height: 72px;
+}
+
+.layout {
+  /* display: flex;
+  flex-direction: column; */
+  height: calc(100vh - 60px);
+}
+
+.header {
+  display: flex;
+  height: 500px;
+  max-height: 500px;
+  padding: 0 260px 0 300px;
+  margin-top: 100px;
+}
+
+.rectangle {
+  border: 2px dashed #3A53D7;
+  width: 530px;
+  height: 300px;
+  transform: rotate(18.69deg);
+  position: absolute;
+  z-index: -1;
+}
+
+.video-wrapper{
+  position: relative;
 }

@@ -35,3 +35,12 @@ html[data-theme='dark'] {
   --ifm-color-primary-lighter: #b5bff2;
   --ifm-color-primary-lightest: #e4e8fa;
 }
+
+.navbar__inner{
+  padding-left: 300px;
+  padding-right: 260px;
+}
+
+.selected-text {
+  color: #3A53D7
+}
