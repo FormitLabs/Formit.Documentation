@@ -2,58 +2,81 @@ import React from 'react';
 import clsx from 'clsx';
 import styles from './HomepageFeatures.module.css';
 
-const FeatureList = [
+const informationCards = [
   {
-    title: 'Easy to Use',
+    src: '/img/docIcon.svg',
+    title: 'Ознакомьтесь с нашей документацией',
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Здесь вы найдете инструкцию по использованию сервиса, 
+        руководство пользователя и методические указания
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
+    src: '/img/targetIcon.svg',
+    title: 'Найдите ответы на все вопросы',
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Мы подготовили для Вас ответы на самые часто задаваемы вопросы
       </>
     ),
   },
   {
-    title: 'Powered by React',
+    src: '/img/bulbIcon.svg',
+    title: 'Следите за обновлениями',
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Все изменения в сервисе будут представлены в разделе “Что нового?”
       </>
     ),
   },
 ];
 
-function Feature({title, description}) {
+const CommunityList = [
+  {
+    src: '/img/tgIcon.svg',
+    description: (
+      <>
+        Мы активно развиваем сообщество AltecInsolations в <span className="selected-text">Telegram</span>-канале.
+        Подписывайтесь, чтобы ничего не пропустить!
+      </>
+    )
+  },
+];
+
+function RenderInformationCards({src, title, description}) {
   return (
-    <div className={clsx('col col--4')}>
-      <div className="text--center">
-      </div>
-      <div className="text--center padding-horiz--md">
-        <h3>{title}</h3>
-        <p>{description}</p>
-      </div>
+    <div className={styles["info-container"]}>
+      <img src={src} alt=''></img>
+      <h3 className={styles["info-title"]}>{title}</h3>
+      <p className={styles["info-description"]}>{description}</p>
     </div>
   );
 }
 
+function Community({src, description}) {
+  return (
+    <div className={styles["community-container"]}>
+      <img src={src} alt=''></img>
+      <p className={styles["community-description"]}>{description}</p>
+    </div>
+  );
+}
+
+
 export default function HomepageFeatures() {
   return (
-    <section className={styles.features}>
-      <div className="container">
-        <div className="row">
-          {FeatureList.map((props, idx) => (
-            <Feature key={idx} {...props} />
-          ))}
-        </div>
+    <section className={styles["section-block"]}>
+      <div className={styles.features}>
+        {informationCards.map((props, idx) => (
+          <RenderInformationCards key={idx} {...props} />
+        ))}
+      </div>
+      <div className={styles.communities}>
+        {CommunityList.map((props, idx) => (
+          <Community key={idx} {...props} />
+        ))}
       </div>
     </section>
   );
