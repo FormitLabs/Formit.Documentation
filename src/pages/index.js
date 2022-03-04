@@ -6,20 +6,41 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import styles from './index.module.css';
 import HomepageFeatures from '../components/HomepageFeatures';
 
+// function HomepageHeader() {
+//   const {siteConfig} = useDocusaurusContext();
+//   return (
+//     <header className={clsx('hero hero--primary', styles.heroBanner)}>
+//       <div className="container">
+//         <h1 className="hero__title">{siteConfig.title}</h1>
+//         <p className="hero__subtitle">{siteConfig.tagline}</p>
+//         <div className={styles.buttons}>
+//           <Link
+//             className="button button--secondary button--lg"
+//             to="/docs/Добро пожаловать/Как начать">
+//             ПЕРЕЙТИ К РЕСУРСАМ
+//           </Link>
+//         </div>
+//       </div>
+//     </header>
+//   );
+// }
+
+//className={clsx('hero hero--primary', styles.heroBanner)} "button button--secondary button--lg"
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
   return (
-    <header className={clsx('hero hero--primary', styles.heroBanner)}>
-      <div className="container">
-        <h1 className="hero__title">{siteConfig.title}</h1>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div className={styles.buttons}>
-          <Link
-            className="button button--secondary button--lg"
-            to="/docs/Добро пожаловать/Как начать">
-            Docusaurus Tutorial - 5min ⏱️
-          </Link>
-        </div>
+    <header className={styles.header}>
+      <div className={styles.buttons}>
+        <h1 className={styles["header-text"]}>Библиотека знаний Altec<span className="selected-text">Insolations</span></h1>
+        <Link
+          className={styles["button-for-resources"]}
+          to="/docs/Добро пожаловать/Как начать">
+          <span>Перейти к ресурсам</span>
+        </Link>
+      </div>
+      <div className={styles["video-wrapper"]}>
+        <div className={styles["rectangle"]}></div>
+        <img src="/img/video.png"></img>
       </div>
     </header>
   );
@@ -31,10 +52,13 @@ export default function Home() {
     <Layout
       title={`Hello from ${siteConfig.title}`}
       description="Description will go into a meta tag in <head />">
-      <HomepageHeader />
-      <main>
-        <HomepageFeatures />
-      </main>
+      <div className={styles.layout}>
+        <HomepageHeader />
+        <main>
+          <HomepageFeatures />
+        </main>
+      </div>
+      
     </Layout>
   );
 }
