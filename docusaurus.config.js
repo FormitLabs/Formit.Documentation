@@ -32,10 +32,12 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: "Altec Insolations",
+        title: "",
         logo: {
           alt: "Altec Insolations",
           src: "img/altecLogo.svg",
+          width: "194px",
+          height : "42px",
         },
         items: [
           { label: "Руководство пользователя", to: "/docs/Добро пожаловать/Как начать" },
@@ -49,6 +51,8 @@ const config = {
         logo: {
           alt: "Altec Insolations",
           src: "img/altecLogo.svg",
+          width: "194px",
+          height : "42px",
         },
         links: [
           {

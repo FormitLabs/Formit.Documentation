@@ -30,7 +30,7 @@ function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <header className={styles.header}>
-      <div className={styles.buttons}>
+      <div className={styles["header-first-columns"]}>
         <h1 className={styles["header-text"]}>Библиотека знаний Altec<span className="selected-text">Insolations</span></h1>
         <Link
           className={styles["button-for-resources"]}
@@ -53,6 +53,14 @@ export default function Home() {
       title={`Hello from ${siteConfig.title}`}
       description="Description will go into a meta tag in <head />">
       <div className={styles.layout}>
+        <div className={styles["ellipse-left"]}></div>
+        <div className={styles["ellipse-top"]}></div>
+        <div className={styles["ellipse-right-owner"]}>
+          <div className={styles["ellipse-right"]}></div>
+          <img src="/img/pointsBottom.svg" alt='' className={styles["points-bottom"]}></img>
+        </div>
+        <img src="/img/pointsTop.svg" alt='' className={styles["points-top"]}></img>
+        
         <HomepageHeader />
         <main>
           <HomepageFeatures />

@@ -44,3 +44,11 @@ html[data-theme='dark'] {
 .selected-text {
   color: #3A53D7
 }
+
+.navbar{
+  height: 80px;
+}
+
+.navbar__logo{
+  height: 42px;
+}
