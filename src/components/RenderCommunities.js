@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './RenderCommunities.module.css';
 
-const CommunityList = [
+const communityList = [
     {
       src: '/img/tgIcon.svg',
       description: (
@@ -25,7 +25,7 @@ const CommunityList = [
 export default function RenderCommunities() {
     return (
         <div className={styles.communities}>
-            {CommunityList.map((props, idx) => (
+            {communityList.map((props, idx) => (
                 <Community key={idx} {...props} />
             ))}
         </div>

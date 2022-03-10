@@ -5,31 +5,10 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import styles from './index.module.css';
 import HomepageFeatures from '../components/HomepageFeatures';
-
-
-//className={clsx('hero hero--primary', styles.heroBanner)} "button button--secondary button--lg"
-function HomepageHeader() {
-  const {siteConfig} = useDocusaurusContext();
-  return (
-    <header className={styles.header}>
-      <div className={styles["header-first-columns"]}>
-        <h1 className={styles["header-text"]}>Библиотека знаний Altec<span className="selected-text">Insolations</span></h1>
-        <Link
-          className={styles["button-for-resources"]}
-          to="/docs/Добро пожаловать/Как начать">
-          <span>Перейти к ресурсам</span>
-        </Link>
-      </div>
-      <div className={styles["video-wrapper"]}>
-        <div className={styles["rectangle"]}></div>
-        <img src="/img/video.png"></img>
-      </div>
-    </header>
-  );
-}
+import HomepageHeader from '../components/HomepageHeader';
 
 export default function Home() {
-  const {siteConfig} = useDocusaurusContext();
+  const { siteConfig } = useDocusaurusContext();
   return (
     <Layout
       title={`Hello from ${siteConfig.title}`}
@@ -42,13 +21,13 @@ export default function Home() {
           <img src="/img/pointsBottom.svg" alt='' className={styles["points-bottom"]}></img>
         </div>
         <img src="/img/pointsTop.svg" alt='' className={styles["points-top"]}></img>
-        
+
         <HomepageHeader />
         <main>
           <HomepageFeatures />
         </main>
       </div>
-      
+
     </Layout>
   );
 }
