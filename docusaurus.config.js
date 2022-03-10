@@ -48,19 +48,19 @@ const config = {
       },
       footer: {
         style: "dark",
-        logo: {
-          alt: "Altec Insolations",
-          src: "img/altecLogo.svg",
-          width: "194px",
-          height : "42px",
-        },
+        // logo: {
+        //   alt: "Altec Insolations",
+        //   src: "img/altecLogo.svg",
+        //   width: "194px",
+        //   height : "42px",
+        // },
         links: [
           {
-            title: "Docs",
+            title: "AltecInsolations",
             items: [
               {
-                label: "Tutorial",
-                to: "/docs/Добро пожаловать/Как начать",
+                label: "info@altecsystems.ru",
+                to: "info@altecsystems.ru",
               },
             ],
           },
@@ -117,8 +117,8 @@ const config = {
         ],
       },
       prism: {
-        theme: lightCodeTheme,
-        darkTheme: darkCodeTheme,
+        // theme: lightCodeTheme,
+        // darkTheme: darkCodeTheme,
       },
     }),
 };

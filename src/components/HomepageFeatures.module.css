@@ -42,7 +42,6 @@
 
 .info-description {
   font-size: 13px;
-  color: #262626;
 }
 
 .info-title {
@@ -50,12 +49,20 @@
   font-weight: 600;
   margin-top: 25px;
   margin-bottom: 20px;
-  color: #262626;
 }
 
 .community-description {
   line-height: 140%;
   margin-left: 20px;
   font-size: 17px;
+}
+
+
+
+html[data-theme='dark'] .community-description, html[data-theme='dark'] .info-title, html[data-theme='dark'] .info-description {
+  color: #FFFFFF;
+}
+
+html[data-theme='light'] .community-description, html[data-theme='light'] .info-title, html[data-theme='light'] .info-description {
   color: #262626;
 }

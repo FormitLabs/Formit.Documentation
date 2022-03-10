@@ -5,7 +5,7 @@
  */
 
 /* You can override the default Infima variables here. */
-:root {
+/* :root {
   --ifm-color-primary: #3a53d7;
   --ifm-color-primary-dark: #2943cc;
   --ifm-color-primary-darker: #2740c1;
@@ -14,9 +14,9 @@
   --ifm-color-primary-lighter: #5c71de;
   --ifm-color-primary-lightest: #7e8ee5;
   --ifm-code-font-size: 95%;
-}
+} */
 
-.docusaurus-highlight-code-line {
+/* .docusaurus-highlight-code-line {
   background-color: rgba(0, 0, 0, 0.1);
   display: block;
   margin: 0 calc(-1 * var(--ifm-pre-padding));
@@ -25,8 +25,9 @@
 
 html[data-theme='dark'] .docusaurus-highlight-code-line {
   background-color: rgba(0, 0, 0, 0.3);
-}
-html[data-theme='dark'] {
+} */
+
+/* html[data-theme='dark'] {
   --ifm-color-primary: #8697ea;
   --ifm-color-primary-dark: #677ce5;
   --ifm-color-primary-darker: #576fe2;
@@ -34,7 +35,7 @@ html[data-theme='dark'] {
   --ifm-color-primary-light: #a5b2ef;
   --ifm-color-primary-lighter: #b5bff2;
   --ifm-color-primary-lightest: #e4e8fa;
-}
+} */
 
 .navbar__inner{
   padding-left: 300px;
@@ -45,10 +46,30 @@ html[data-theme='dark'] {
   color: #3A53D7
 }
 
+html[data-theme='dark'] .selected-text {
+  color: #8697EA
+}
+
 .navbar{
   height: 80px;
 }
 
 .navbar__logo{
   height: 42px;
+}
+
+html[data-theme='dark'] {
+  background: linear-gradient(171.7deg, #000000 1.35%, #3A53D7 182%);
+}
+
+.footer--dark {
+  --ifm-footer-background-color: #222222;
+}
+
+.footer {
+  height: 280px;
+}
+
+html[data-theme='dark'] .navbar{
+  background: linear-gradient(90deg, #111A4D 0%, rgba(17, 26, 77, 0.989583) 0.01%, rgba(17, 26, 77, 0) 100%);
 }
