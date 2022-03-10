@@ -50,11 +50,13 @@ const config = {
         style: "dark",
         links: [
           {
-            title: "AltecInsolations",
+            title: null,
             items: [
               {
-                label: "info@altecsystems.ru",
-                to: "info@altecsystems.ru",
+                html: `<img src="./img/logoDark.svg" >`
+              },
+              {
+                html: `<div class="mail-info"><u>info@altecsystems.ru</u></div>`
               },
             ],
           },
@@ -63,19 +65,19 @@ const config = {
             items: [
               {
                 label: "Корпоративный сайт",
-                href: "https://altecsystems.ru/",
+                to: "https://altecsystems.ru/",
               },
               {
                 label: "Из 2D в BIM",
-                href: "https://altecsystems.ru/2d-to-bim",
+                to: "https://altecsystems.ru/2d-to-bim",
               },
               {
                 label: "Решение по Инсоляции КЕО",
-                href: "https://insolations.ru/",
+                to: "https://insolations.ru/",
               },
               {
                 label: "Разработка Altec",
-                href: "https://twitter.com/",
+                to: "https://twitter.com/",
               },
             ],
           },
@@ -85,7 +87,6 @@ const config = {
               {
                 label: "Руководство",
                 to: "/docs/Добро пожаловать/Руководство",
-                className: "nav-first-item"
               },
               {
                 label: "Методические указания",
@@ -98,6 +99,32 @@ const config = {
               {
                 label: "Ответы на вопросы",
                 to: "https://altecsystems.ru/4",
+              },
+            ],
+          },
+          {
+            title: null,
+            items: [
+              {
+                html: `<span class="number">8 800 301-81-97</span>`
+              },
+              {
+                html: `<span class="number">8 343 247-24-04</span>`
+              },
+              {
+                html: `
+                    <div class="footer-social-networks">
+                      <a href="https://youtube.ru" target="_blank">
+                        <img src="./img/youtube-footer.svg" />
+                      </a>
+                      <a href="https://youtube.ru" target="_blank">
+                        <img src="./img/ig-footer.svg" />
+                      </a>
+                      <a href="https://youtube.ru" target="_blank">
+                        <img src="./img/tg-footer.svg" />
+                      </a>
+                    </div>
+                  `
               },
             ],
           },
