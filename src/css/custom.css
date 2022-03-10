@@ -73,3 +73,11 @@ html[data-theme='dark'] {
 html[data-theme='dark'] .navbar{
   background: linear-gradient(90deg, #111A4D 0%, rgba(17, 26, 77, 0.989583) 0.01%, rgba(17, 26, 77, 0) 100%);
 }
+
+.nav-first-item {
+  margin-left: 135px;
+}
+
+.nav-other-item {
+  margin-left: 20px;
+}
