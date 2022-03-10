@@ -48,12 +48,6 @@ const config = {
       },
       footer: {
         style: "dark",
-        // logo: {
-        //   alt: "Altec Insolations",
-        //   src: "img/altecLogo.svg",
-        //   width: "194px",
-        //   height : "42px",
-        // },
         links: [
           {
             title: "AltecInsolations",
@@ -81,7 +75,7 @@ const config = {
               },
               {
                 label: "Разработка Altec",
-                href: "https://twitter.com/docusaurus",
+                href: "https://twitter.com/",
               },
             ],
           },
@@ -102,15 +96,15 @@ const config = {
               },
               {
                 label: "Руководство",
-                to: "https://altecsystems.ru/",
+                to: "https://altecsystems.ru/2",
               },
               {
                 label: "Вопросы",
-                to: "https://altecsystems.ru/",
+                to: "https://altecsystems.ru/3",
               },
               {
                 label: "Обратная связь",
-                to: "https://altecsystems.ru/",
+                to: "https://altecsystems.ru/4",
               },
             ],
           },
