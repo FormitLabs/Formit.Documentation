@@ -35,11 +35,12 @@ const config = {
         logo: {
           alt: "Altec Insolations",
           src: "img/altecLogo.svg",
+          srcDark: "img/logoDark.svg",
           width: "194px",
-          height : "42px",
+          height: "42px",
         },
         items: [
-          { label: "Руководство пользователя", to: "/docs/Добро пожаловать/Руководство", className: "nav-first-item"},
+          { label: "Руководство пользователя", to: "/docs/Добро пожаловать/Руководство", className: "nav-first-item" },
           { label: "Методические указания", to: "/docs/Добро пожаловать/Методические указания", className: "nav-other-item" },
           { label: "Что нового", to: "/docs/Добро пожаловать/Методические указания", className: "nav-other-item" },
           { label: "Ответы на вопросы", to: "/docs/Добро пожаловать/Методические указания", className: "nav-other-item" }
@@ -84,6 +85,7 @@ const config = {
               {
                 label: "Руководство",
                 to: "/docs/Добро пожаловать/Руководство",
+                className: "nav-first-item"
               },
               {
                 label: "Методические указания",
