@@ -49,6 +49,7 @@ html[data-theme='dark'] .navbar{
   display: flex;
   justify-content: space-between;
   width: 155px;
+  margin-left: 100px;
 }
 
 .mail-info {
@@ -61,4 +62,21 @@ html[data-theme='dark'] .navbar{
   font-weight: 600;
   font-size: 20px;
   line-height: 200%;
+  margin-left: 100px;
+}
+
+.footer-link {
+  color: white;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 185%;
+}
+
+.footer-link-image {
+  margin-right: 20px;
+}
+
+.footer__items li {
+  height: 40px;
 }

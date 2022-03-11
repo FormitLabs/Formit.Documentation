@@ -52,7 +52,7 @@
     top: 800px; */
     bottom: -70px;
     right: -135px;
-    z-index: -2;
+    z-index: -1;
   }
   
   html[data-theme='dark'] .ellipse-left {
@@ -72,7 +72,7 @@
     left: 1190px;
     top: 455px;
     right: 0;
-    z-index: -1;
+    
     background: radial-gradient(50% 50% at 50% 50%, rgba(58, 83, 215, 0.62) 0%, rgba(58, 83, 215, 0) 100%);
     filter: blur(150px);
   }

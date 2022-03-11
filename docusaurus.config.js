@@ -60,24 +60,49 @@ const config = {
               },
             ],
           },
+          // {
+          //   title: null,
+          //   items: [
+          //     {
+          //       label: "Корпоративный сайт",
+          //       to: "https://altecsystems.ru/",
+          //     },
+          //     {
+          //       label: "Из 2D в BIM",
+          //       to: "https://altecsystems.ru/2d-to-bim",
+          //     },
+          //     {
+          //       label: "Решение по Инсоляции КЕО",
+          //       to: "https://insolations.ru/",
+          //     },
+          //     {
+          //       label: "Разработка Altec",
+          //       to: "https://twitter.com/",
+          //     },
+          //   ],
+          // },
           {
             title: null,
             items: [
               {
-                label: "Корпоративный сайт",
-                to: "https://altecsystems.ru/",
+                html: `
+                    <a href="https://altecsystems.ru/" class="footer-link" target="_blank"><img src="./img/linkIcon.svg" class="footer-link-image"/>Корпоративный сайт</a>
+                  `,
               },
               {
-                label: "Из 2D в BIM",
-                to: "https://altecsystems.ru/2d-to-bim",
+                html: `
+                    <a href="https://altecsystems.ru/2d-to-bim" class="footer-link" target="_blank"><img src="./img/linkIcon.svg" class="footer-link-image"/>Из 2D в BIM</a>
+                  `,
               },
               {
-                label: "Решение по Инсоляции КЕО",
-                to: "https://insolations.ru/",
+                html: `
+                    <a href="https://insolations.ru/" class="footer-link" target="_blank"><img src="./img/linkIcon.svg" class="footer-link-image"/>Решение по Инсоляции КЕО</a>
+                  `,
               },
               {
-                label: "Разработка Altec",
-                to: "https://twitter.com/",
+                html: `
+                    <a href="https://insolations.ru/" class="footer-link" target="_blank"><img src="./img/linkIcon.svg" class="footer-link-image"/>Разработка Altec</a>
+                  `,
               },
             ],
           },
@@ -114,13 +139,13 @@ const config = {
               {
                 html: `
                     <div class="footer-social-networks">
-                      <a href="https://youtube.ru" target="_blank">
+                      <a href="https://www.youtube.com/channel/UCgLd-rl6CpRfzbrOMMYxgBQ" target="_blank">
                         <img src="./img/youtube-footer.svg" />
                       </a>
-                      <a href="https://youtube.ru" target="_blank">
+                      <a href="https://www.instagram.com/altecsystems/" target="_blank">
                         <img src="./img/ig-footer.svg" />
                       </a>
-                      <a href="https://youtube.ru" target="_blank">
+                      <a href="https://telegram.org/" target="_blank">
                         <img src="./img/tg-footer.svg" />
                       </a>
                     </div>
