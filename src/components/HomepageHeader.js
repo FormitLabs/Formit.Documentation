@@ -14,7 +14,7 @@ export default function HomepageHeader() {
           </Link>
         </div>
         <div className={styles["video-wrapper"]}>
-          <div className={styles["rectangle"]}></div>
+          <div className={styles.rectangle}></div>
           <img src="/img/video.png"></img>
         </div>
       </header>

@@ -36,8 +36,8 @@ const config = {
           alt: "Altec Insolations",
           src: "img/altecLogo.svg",
           srcDark: "img/logoDark.svg",
-          width: "194px",
-          height: "42px",
+          width: "195px",
+          height: "40px",
         },
         items: [
           { label: "Руководство пользователя", to: "/docs/Добро пожаловать/Руководство", className: "nav-first-item" },
@@ -50,7 +50,6 @@ const config = {
         style: "dark",
         links: [
           {
-            title: null,
             items: [
               {
                 html: `<img src="./img/logoDark.svg" >`
@@ -60,29 +59,7 @@ const config = {
               },
             ],
           },
-          // {
-          //   title: null,
-          //   items: [
-          //     {
-          //       label: "Корпоративный сайт",
-          //       to: "https://altecsystems.ru/",
-          //     },
-          //     {
-          //       label: "Из 2D в BIM",
-          //       to: "https://altecsystems.ru/2d-to-bim",
-          //     },
-          //     {
-          //       label: "Решение по Инсоляции КЕО",
-          //       to: "https://insolations.ru/",
-          //     },
-          //     {
-          //       label: "Разработка Altec",
-          //       to: "https://twitter.com/",
-          //     },
-          //   ],
-          // },
           {
-            title: null,
             items: [
               {
                 html: `
@@ -107,7 +84,6 @@ const config = {
             ],
           },
           {
-            title: null,
             items: [
               {
                 label: "Руководство",
@@ -119,16 +95,15 @@ const config = {
               },
               {
                 label: "Что нового",
-                to: "https://altecsystems.ru/3",
+                to: "/docs/Добро пожаловать/",
               },
               {
                 label: "Ответы на вопросы",
-                to: "https://altecsystems.ru/4",
+                to: "/docs/Добро пожаловать/Как начать",
               },
             ],
           },
           {
-            title: null,
             items: [
               {
                 html: `<span class="number">8 800 301-81-97</span>`
@@ -154,10 +129,6 @@ const config = {
             ],
           },
         ],
-      },
-      prism: {
-        // theme: lightCodeTheme,
-        // darkTheme: darkCodeTheme,
       },
     }),
 };
