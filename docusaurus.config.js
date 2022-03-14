@@ -59,7 +59,10 @@ const config = {
                 `
               },
               {
-                html: `<div class="mail-info"><u>info@altecsystems.ru</u></div>`
+                html: `<div></div>`
+              },
+              {
+                html: `<a class="mail-info" href="mailto:info@altecsystems.ru"><u>info@altecsystems.ru</u></a>`
               },
             ],
           },
