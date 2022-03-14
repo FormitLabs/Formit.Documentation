@@ -26,7 +26,7 @@ export default function RenderCommunities() {
     return (
         <div className={styles.communities}>
             {communityList.map((props, idx) => (
-                <Community key={idx} {...props} />
+                <Community key={`community ${idx}`} {...props} />
             ))}
         </div>
     );

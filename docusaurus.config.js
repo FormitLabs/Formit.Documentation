@@ -52,7 +52,11 @@ const config = {
           {
             items: [
               {
-                html: `<img src="./img/logoDark.svg" >`
+                html: `
+                  <a href="#">
+                    <img src="img/logoDark.svg" >
+                  </a>
+                `
               },
               {
                 html: `<div class="mail-info"><u>info@altecsystems.ru</u></div>`

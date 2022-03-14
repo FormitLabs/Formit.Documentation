@@ -37,7 +37,7 @@ export default function RenderInformationCards() {
     return (
         <div className={styles.features}>
             {informationCards.map((props, idx) => (
-                <InformationCard key={idx} {...props} />
+                <InformationCard key={`informationCard ${idx}`} {...props} />
             ))}
         </div>
     );
