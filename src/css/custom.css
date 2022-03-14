@@ -23,6 +23,10 @@ html[data-theme='dark'] {
   background: linear-gradient(171.7deg, #000000 1.35%, #3A53D7 182%);
 }
 
+html[data-theme='dark'] .docs-doc-page {
+  background: linear-gradient(90deg, #000000 1.35%, #3A53D7 182%);
+}
+
 .footer--dark {
   --ifm-footer-background-color: #222222;
 }

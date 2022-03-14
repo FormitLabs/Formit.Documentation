@@ -54,7 +54,7 @@ const config = {
               {
                 html: `
                   <a href="#">
-                    <img src="./img/logoDark.svg" >
+                    <img src="/img/logoDark.svg" >
                   </a>
                 `
               },
@@ -70,22 +70,22 @@ const config = {
             items: [
               {
                 html: `
-                    <a href="https://altecsystems.ru/" class="footer-link" target="_blank"><img src="./img/linkIcon.svg" class="footer-link-image"/>Корпоративный сайт</a>
+                    <a href="https://altecsystems.ru/" class="footer-link" target="_blank"><img src="/img/linkIcon.svg" class="footer-link-image"/>Корпоративный сайт</a>
                   `,
               },
               {
                 html: `
-                    <a href="https://altecsystems.ru/2d-to-bim" class="footer-link" target="_blank"><img src="./img/linkIcon.svg" class="footer-link-image"/>Из 2D в BIM</a>
+                    <a href="https://altecsystems.ru/2d-to-bim" class="footer-link" target="_blank"><img src="/img/linkIcon.svg" class="footer-link-image"/>Из 2D в BIM</a>
                   `,
               },
               {
                 html: `
-                    <a href="https://insolations.ru/" class="footer-link" target="_blank"><img src="./img/linkIcon.svg" class="footer-link-image"/>Решение по Инсоляции КЕО</a>
+                    <a href="https://insolations.ru/" class="footer-link" target="_blank"><img src="/img/linkIcon.svg" class="footer-link-image"/>Решение по Инсоляции КЕО</a>
                   `,
               },
               {
                 html: `
-                    <a href="https://insolations.ru/" class="footer-link" target="_blank"><img src="./img/linkIcon.svg" class="footer-link-image"/>Разработка Altec</a>
+                    <a href="https://insolations.ru/" class="footer-link" target="_blank"><img src="/img/linkIcon.svg" class="footer-link-image"/>Разработка Altec</a>
                   `,
               },
             ],
@@ -122,13 +122,13 @@ const config = {
                 html: `
                     <div class="footer-social-networks">
                       <a href="https://www.youtube.com/channel/UCgLd-rl6CpRfzbrOMMYxgBQ" target="_blank">
-                        <img src="./img/youtube-footer.svg" />
+                        <img src="/img/youtube-footer.svg" />
                       </a>
                       <a href="https://www.instagram.com/altecsystems/" target="_blank">
-                        <img src="./img/ig-footer.svg" />
+                        <img src="/img/ig-footer.svg" />
                       </a>
                       <a href="https://telegram.org/" target="_blank">
-                        <img src="./img/tg-footer.svg" />
+                        <img src="/img/tg-footer.svg" />
                       </a>
                     </div>
                   `
