@@ -1,6 +1,8 @@
 .navbar__inner{
-  padding-left: 300px;
-  padding-right: 260px;
+  max-width: 1320px;
+  margin: 0 auto;
+  /* padding-left: 300px;
+  padding-right: 260px; */
 }
 
 .selected-text {

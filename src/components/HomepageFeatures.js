@@ -6,7 +6,7 @@ import RenderCommunities from './RenderCommunities';
 
 export default function HomepageFeatures() {
   return (
-    <section className={styles["section-block"]}>
+    <section className={styles.section}>
       <RenderInformationCards />
       <RenderCommunities />
     </section>
