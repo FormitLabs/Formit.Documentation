@@ -37,7 +37,6 @@ html[data-theme='dark'] .docs-doc-page {
 }
 
 html[data-theme='dark'] .navbar{
-  /* background: linear-gradient(90deg, #111A4D 0%, rgba(17, 26, 77, 1) 0%, rgba(17, 26, 77, 0) 100%) right, #000000; */
   background: url("/static/img/navbar.svg") right, #000000;
 }
 
