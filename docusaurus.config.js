@@ -32,62 +32,110 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: "Altec Insolations",
         logo: {
           alt: "Altec Insolations",
           src: "img/altecLogo.svg",
+          srcDark: "img/logoDark.svg",
+          width: "195px",
+          height: "40px",
         },
         items: [
-          { label: "Tutorial", to: "/docs/Добро пожаловать/как начать" },
+          { label: "Руководство пользователя", to: "/docs/Добро пожаловать/Руководство", className: "nav-first-item" },
+          { label: "Методические указания", to: "/docs/Добро пожаловать/Методические указания", className: "nav-other-item" },
+          { label: "Что нового", to: "/docs/Добро пожаловать/Методические указания", className: "nav-other-item" },
+          { label: "Ответы на вопросы", to: "/docs/Добро пожаловать/Методические указания", className: "nav-other-item" }
         ],
       },
       footer: {
         style: "dark",
         links: [
           {
-            title: "Docs",
             items: [
               {
-                label: "Tutorial",
+                html: `
+                  <a href="#">
+                    <img src="/img/logoDark.svg" >
+                  </a>
+                `
+              },
+              {
+                html: `<div></div>`
+              },
+              {
+                html: `<a class="mail-info" href="mailto:info@altecsystems.ru"><u>info@altecsystems.ru</u></a>`
+              },
+            ],
+          },
+          {
+            items: [
+              {
+                html: `
+                    <a href="https://altecsystems.ru/" class="footer-link" target="_blank"><img src="/img/linkIcon.svg" class="footer-link-image"/>Корпоративный сайт</a>
+                  `,
+              },
+              {
+                html: `
+                    <a href="https://altecsystems.ru/2d-to-bim" class="footer-link" target="_blank"><img src="/img/linkIcon.svg" class="footer-link-image"/>Из 2D в BIM</a>
+                  `,
+              },
+              {
+                html: `
+                    <a href="https://insolations.ru/" class="footer-link" target="_blank"><img src="/img/linkIcon.svg" class="footer-link-image"/>Решение по Инсоляции КЕО</a>
+                  `,
+              },
+              {
+                html: `
+                    <a href="https://insolations.ru/" class="footer-link" target="_blank"><img src="/img/linkIcon.svg" class="footer-link-image"/>Разработка Altec</a>
+                  `,
+              },
+            ],
+          },
+          {
+            items: [
+              {
+                label: "Руководство",
+                to: "/docs/Добро пожаловать/Руководство",
+              },
+              {
+                label: "Методические указания",
+                to: "/docs/Добро пожаловать/Методические указания",
+              },
+              {
+                label: "Что нового",
+                to: "/docs/Добро пожаловать/",
+              },
+              {
+                label: "Ответы на вопросы",
                 to: "/docs/Добро пожаловать/Как начать",
               },
             ],
           },
           {
-            title: "Community",
             items: [
               {
-                label: "Stack Overflow",
-                href: "https://stackoverflow.com/questions/tagged/docusaurus",
+                html: `<span class="number">8 800 301-81-97</span>`
               },
               {
-                label: "Discord",
-                href: "https://discordapp.com/invite/docusaurus",
+                html: `<span class="number">8 343 247-24-04</span>`
               },
               {
-                label: "Twitter",
-                href: "https://twitter.com/docusaurus",
-              },
-            ],
-          },
-          {
-            title: "Больше",
-            items: [
-              {
-                label: "Altec Systems",
-                to: "https://altecsystems.ru/",
-              },
-              {
-                label: "Altec Insolations",
-                to: "https://insolations.ru/",
+                html: `
+                    <div class="footer-social-networks">
+                      <a href="https://www.youtube.com/channel/UCgLd-rl6CpRfzbrOMMYxgBQ" target="_blank">
+                        <img src="/img/youtube-footer.svg" />
+                      </a>
+                      <a href="https://www.instagram.com/altecsystems/" target="_blank">
+                        <img src="/img/ig-footer.svg" />
+                      </a>
+                      <a href="https://telegram.org/" target="_blank">
+                        <img src="/img/tg-footer.svg" />
+                      </a>
+                    </div>
+                  `
               },
             ],
           },
         ],
-      },
-      prism: {
-        theme: lightCodeTheme,
-        darkTheme: darkCodeTheme,
       },
     }),
 };
