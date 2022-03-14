@@ -54,7 +54,7 @@ const config = {
               {
                 html: `
                   <a href="#">
-                    <img src="img/logoDark.svg" >
+                    <img src="./img/logoDark.svg" >
                   </a>
                 `
               },
