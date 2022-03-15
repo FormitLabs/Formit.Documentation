@@ -3,7 +3,7 @@ import styles from './RenderFixedElements.module.css';
 
 export default function RenderFixedElements() {
     return (
-        <div>
+        <div className={styles["fixed-elements"]}>
             <div className={styles["ellipse-left"]}></div>
             <div className={styles["ellipse-top"]}></div>
             <div className={styles["ellipse-right-owner"]}>
