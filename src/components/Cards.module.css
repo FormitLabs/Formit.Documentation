@@ -1,0 +1,32 @@
+.cards {
+    position: relative;
+    height: 400px;
+  }
+  
+  .left-card {
+    position: absolute;
+    left: 0;
+    top: 17px;
+    width: 180px;
+    height: 226px;
+    border: 2px dashed blue;
+  }
+  
+  .mid-card {
+    position: absolute;
+    left: 102px;
+    top: 0;
+    z-index: 1;
+    width: 195px;
+    height: 243px;
+    border: 2px dashed blue;
+  }
+  
+  .right-card {
+    position: absolute;
+    left: 217px;
+    top: 17px;
+    width: 180px;
+    height: 226px;
+    border: 2px dashed blue;
+}
