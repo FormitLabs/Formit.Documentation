@@ -33,3 +33,31 @@ html[data-theme='light'] .info-title,
 html[data-theme='light'] .info-description {
     color: #262626;
 }
+
+@media screen and (max-width: 375px) {
+    .info-container {
+        border-radius: 4px;
+        border: 2px dashed #3A53D7;
+        width: 195px;
+        height: 245px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 25px 20px;
+    }
+    
+    .info-description {
+        font-size: 11px;
+    }
+    
+    .info-image{
+        align-self: start;
+    }
+    
+    .info-title {
+        font-size: 13px;
+        font-weight: 600;
+        margin-top: 20px;
+        margin-bottom: 5px;
+    }
+}
