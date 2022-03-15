@@ -1,7 +1,7 @@
 .features {
   display: flex;
   align-items: center;
-  justify-content: start;
+  /* justify-content: start; */
   gap: 25px;
-  margin-bottom: 100px;
+  /* margin-bottom: 100px; */
 }

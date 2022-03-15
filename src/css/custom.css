@@ -1,8 +1,6 @@
 .navbar__inner{
   max-width: 1320px;
   margin: 0 auto;
-  /* padding-left: 300px;
-  padding-right: 260px; */
 }
 
 .selected-text {
@@ -85,4 +83,8 @@ html[data-theme='dark'] .navbar{
 
 .footer__items li {
   height: 40px;
+}
+
+.main-wrapper {
+  overflow: hidden;
 }

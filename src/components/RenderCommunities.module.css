@@ -1,7 +1,7 @@
 .community-container {
     display: flex;
     align-items: flex-start;
-    width: 475px;
+    /* width: 475px; */
   }
   
   .communities {
@@ -17,8 +17,6 @@
     margin-left: 20px;
     font-size: 17px;
   }
-  
-  
   
   html[data-theme='dark'] .community-description {
     color: #FFFFFF;

@@ -1,5 +1,13 @@
 .layout {
-  height: calc(100vh - 180px);
+  /* height: calc(100vh - 80px); */
+  /* height: 91.7vh; */
+  /* height: 100vh; */
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  align-items: flex-start;
   max-width: 1320px;
   margin: 0 auto;
+  overflow: hidden;
 }

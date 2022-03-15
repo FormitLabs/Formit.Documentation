@@ -13,8 +13,12 @@
     position: absolute;
     width: 800px;
     height: 800px;
-    left: 760px;
+    /* width: 41.7%;
+    height: 41.7%; */
+    /* left: 760px; */
+    left: 39.6%;
     top: -90px;
+    z-index: -1;
     background: radial-gradient(50% 50% at 50% 50%, rgba(117, 52, 255, 0.2442) 0%, rgba(255, 255, 255, 0) 100%);
     filter: blur(150px);
   }
@@ -80,7 +84,6 @@
     height: 560px;
     left: 950px;
     top: 20px;
-    z-index: -1;
     background: radial-gradient(50% 50% at 50% 50%, rgba(58, 83, 215, 0.62) 0%, rgba(58, 83, 215, 0) 100%);
     filter: blur(150px);
   }
