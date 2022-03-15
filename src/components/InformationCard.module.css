@@ -2,14 +2,19 @@
     border-radius: 4px;
     border: 2px dashed #3A53D7;
     width: 31.25%;
-    height: 280px;
-    /* display: flex;
-    flex-direction: column; */
+    height: 29vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     padding: 30px 25px;
 }
 
 .info-description {
     font-size: 13px;
+}
+
+.info-image{
+    align-self: start;
 }
 
 .info-title {
