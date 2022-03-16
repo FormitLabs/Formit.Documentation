@@ -10,6 +10,7 @@
   .features {
     scroll-snap-type: x none;
     overflow-x: auto;
-    width: 315px;
+    width: 375px;
+    padding: 0 30px;
   }
 }

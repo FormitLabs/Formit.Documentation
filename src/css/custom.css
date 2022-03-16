@@ -91,6 +91,11 @@ html[data-theme='dark'] .navbar{
 }
 
 @media screen and (max-width: 375px) {
+  .navbar__items {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
   .footer__col:nth-child(2), .footer__col:nth-child(3){
     display: none;
   }
@@ -135,5 +140,19 @@ html[data-theme='dark'] .navbar{
   .footer {
     height: 250px;
     padding: 30px;
+  }
+
+  .docs-doc-page {
+    max-width: 315px;
+    margin: 0 auto;
+  }
+
+  .nav-first-item {
+    margin-left: 20px;
+  }
+
+  .navbar__logo{
+    width: 170px;
+    height: 35px;
   }
 }

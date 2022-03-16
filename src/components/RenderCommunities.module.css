@@ -28,7 +28,7 @@ html[data-theme='light'] .community-description {
 @media screen and (max-width: 375px) {
   .communities {
     margin-top: 45px;
-    margin-left: 0;
+    margin-left: 30px;
     align-self: flex-start;
   }
 

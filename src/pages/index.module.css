@@ -11,7 +11,8 @@
 
 @media screen and (max-width: 375px) {
   .layout {
-    max-width: 315px;
-    margin: 0 auto;
+    align-items: center;
+    /* max-width: 315px;
+    margin: 0 auto; */
   }
 }
