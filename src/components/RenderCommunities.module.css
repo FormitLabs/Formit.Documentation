@@ -29,6 +29,7 @@ html[data-theme='light'] .community-description {
   .communities {
     margin-top: 45px;
     margin-left: 0;
+    align-self: flex-start;
   }
 
   .community-description {

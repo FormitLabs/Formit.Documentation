@@ -27,15 +27,6 @@ html[data-theme='dark'] .docs-doc-page {
   background: linear-gradient(90deg, #000000 1.35%, #3A53D7 182%);
 }
 
-.footer--dark {
-  --ifm-footer-background-color: #222222;
-}
-
-.footer {
-  height: 280px;
-  padding-top: 50px;
-}
-
 html[data-theme='dark'] .navbar{
   background: url("/static/img/navbar.svg") right, #000000;
 }
@@ -46,6 +37,16 @@ html[data-theme='dark'] .navbar{
 
 .nav-other-item {
   margin-left: 20px;
+}
+
+.footer--dark {
+  --ifm-footer-background-color: #222222;
+}
+
+.footer {
+  height: 280px;
+  padding-top: 50px;
+  background: #262626;
 }
 
 .footer-social-networks {
@@ -87,4 +88,52 @@ html[data-theme='dark'] .navbar{
 
 .main-wrapper {
   overflow: hidden;
+}
+
+@media screen and (max-width: 375px) {
+  .footer__col:nth-child(2), .footer__col:nth-child(3){
+    display: none;
+  }
+
+  .row .col {
+    padding: 0;
+  }
+
+  .mail-info {
+    font-size: 16px;
+  }
+
+  .number {
+    font-size: 16px;
+    line-height: 155%;
+    margin-left: 0;
+  }
+  
+  .footer__items li {
+    height: 25px;
+  }
+
+  .footer-social-networks {
+    position: absolute;
+    right: 30px;
+    margin-top: 0px;
+    display: flex;
+    justify-content: space-between;
+    width: 115px;
+    margin-left: 0px;
+  }
+
+  .footer-social-networks a {
+    width: 30px;
+    height: 30px;
+  }
+
+  .footer__col {
+    margin-bottom: 25px;
+  }
+
+  .footer {
+    height: 250px;
+    padding: 30px;
+  }
 }
