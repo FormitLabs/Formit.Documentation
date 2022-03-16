@@ -9,6 +9,12 @@
   overflow: hidden;
 }
 
+@media screen and (max-width: 834px) {
+  .layout {
+    align-items: center;
+  }
+}
+
 @media screen and (max-width: 375px) {
   .layout {
     align-items: center;

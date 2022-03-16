@@ -90,7 +90,34 @@ html[data-theme='dark'] .navbar{
   overflow: hidden;
 }
 
+
+
+@media screen and (max-width: 996px)
+{
+  .navbar__items--right div{
+    display: block;
+  }
+
+  .navbar__item {
+    display: block;
+  }
+
+  .navbar__toggle {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 834px) {
+  .row .col.col.col {
+    flex-basis: 0;
+  }
+}
+
 @media screen and (max-width: 375px) {
+  .row .col.col.col {
+    flex-basis: 100%;
+  }
+
   .navbar__items {
     flex-direction: row-reverse;
     justify-content: space-between;
@@ -119,13 +146,17 @@ html[data-theme='dark'] .navbar{
   }
 
   .footer-social-networks {
-    position: absolute;
-    right: 30px;
-    margin-top: 0px;
+    position: relative;
+    left: 200px;
+    bottom: 55px;
+    margin: 0;
     display: flex;
     justify-content: space-between;
     width: 115px;
-    margin-left: 0px;
+  }
+
+  .footer__item:nth-child(3) {
+    margin-top: 10px;
   }
 
   .footer-social-networks a {
@@ -154,5 +185,17 @@ html[data-theme='dark'] .navbar{
   .navbar__logo{
     width: 170px;
     height: 35px;
+  }
+
+  .navbar__items--right div{
+    display: none;
+  }
+
+  .navbar__item {
+    display: none;
+  }
+
+  .navbar__toggle {
+    display: inherit;
   }
 }

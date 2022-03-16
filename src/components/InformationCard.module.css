@@ -34,15 +34,31 @@ html[data-theme='light'] .info-description {
     color: #262626;
 }
 
+@media screen and (max-width: 834px) {
+    .info-container {
+        width: 27vh;
+        height: 245px;
+        padding: 25px 20px;
+        flex: 1;
+    }
+    
+    .info-title {
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 140%;
+        margin-top: 20px;
+        margin-bottom: 5px;
+    }
+
+    .info-description {
+        font-size: 11px;
+    }
+}
+
 @media screen and (max-width: 375px) {
     .info-container {
-        border-radius: 4px;
-        border: 2px dashed #3A53D7;
         width: 195px;
         height: 245px;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
         padding: 25px 20px;
         scroll-snap-align: start;
         flex: 0 0 195px;
@@ -63,3 +79,4 @@ html[data-theme='light'] .info-description {
         margin-bottom: 5px;
     }
 }
+

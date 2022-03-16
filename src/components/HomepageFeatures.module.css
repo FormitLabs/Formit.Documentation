@@ -5,8 +5,20 @@
   margin-bottom: 75px;
 }
 
+@media screen and (max-width: 834px) {
+  .section {
+    flex-direction: column;
+    max-width: 745px;
+    margin: 0 auto;
+  }
+}
+
 @media screen and (max-width: 375px) {
   .section {
     flex-direction: column;
+    max-width: auto;
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 85px;
   }
 }

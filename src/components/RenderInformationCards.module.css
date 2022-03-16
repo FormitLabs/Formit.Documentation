@@ -6,6 +6,12 @@
   /* margin-bottom: 100px; */
 }
 
+@media screen and (max-width: 834px) {
+  .features {
+    gap: 35px;
+  }
+}
+
 @media screen and (max-width: 375px) {
   .features {
     scroll-snap-type: x none;
@@ -14,3 +20,4 @@
     padding: 0 30px;
   }
 }
+
