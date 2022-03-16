@@ -198,4 +198,8 @@ html[data-theme='dark'] .navbar{
   .navbar__toggle {
     display: inherit;
   }
+
+  .navbar-sidebar {
+    width: 100%;
+  }
 }
