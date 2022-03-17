@@ -2,6 +2,9 @@ import React from 'react';
 import Link from '@docusaurus/Link';
 import styles from './HomepageHeader.module.css';
 
+
+//Вариант с Flex
+
 // export default function HomepageHeader() {
 //     return (
 //       <header className={styles.header}>

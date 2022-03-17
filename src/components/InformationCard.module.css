@@ -34,7 +34,7 @@ html[data-theme='light'] .info-description {
     color: #262626;
 }
 
-@media screen and (max-width: 834px) {
+@media screen and (max-width: 834px) and (min-width: 376px) {
     .info-container {
         width: 27vh;
         height: 245px;
@@ -55,7 +55,7 @@ html[data-theme='light'] .info-description {
     }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 375px)  {
     .info-container {
         width: 195px;
         height: 245px;

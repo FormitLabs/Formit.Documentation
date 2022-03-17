@@ -25,6 +25,24 @@ html[data-theme='light'] .community-description {
   color: #262626;
 }
 
+@media screen and (max-width: 834px) and (min-width: 376px) {
+  .communities {
+    margin-top: 40px;
+    margin-left: 0px;
+    margin-bottom: 65px;
+    align-self: flex-start;
+  }
+
+  .community-description {
+    width: 450px;
+    margin-left: 20px;
+    margin-top: 0;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 140%;
+  }
+}
+
 @media screen and (max-width: 375px) {
   .communities {
     margin-top: 45px;

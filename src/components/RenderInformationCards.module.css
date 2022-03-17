@@ -6,7 +6,7 @@
   /* margin-bottom: 100px; */
 }
 
-@media screen and (max-width: 834px) {
+@media screen and (max-width: 834px) and (min-width: 376px) {
   .features {
     gap: 35px;
   }

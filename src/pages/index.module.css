@@ -9,7 +9,7 @@
   overflow: hidden;
 }
 
-@media screen and (max-width: 834px) {
+@media screen and (max-width: 834px) and (min-width: 376px) {
   .layout {
     align-items: center;
   }
