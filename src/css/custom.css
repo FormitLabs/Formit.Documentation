@@ -163,7 +163,9 @@ html[data-theme='dark'] .navbar{
   }
 
   .mail-info {
-    font-size: 16px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 155%;
   }
 
   .number {
@@ -184,8 +186,7 @@ html[data-theme='dark'] .navbar{
 
   .footer {
     height: 210px;
-    max-width: 745px;
-    margin: 0 auto;
+    
     /* padding: 45px; */
     background: #222222;
   }
@@ -199,6 +200,11 @@ html[data-theme='dark'] .navbar{
     font-weight: 400;
     font-size: 12px;
     line-height: 200%;
+  }
+
+  .footer .container {
+    max-width: 780px;
+    margin: 0 auto;
   }
 }
 

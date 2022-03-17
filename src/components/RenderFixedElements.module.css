@@ -1,5 +1,6 @@
 .fixed-elements {
   display: block;
+  overflow: hidden;
 }
 
 .ellipse-left {
