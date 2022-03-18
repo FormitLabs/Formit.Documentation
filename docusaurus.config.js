@@ -22,7 +22,12 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         theme: {
-          customCss: require.resolve("./src/css/custom.css"),
+          customCss: 
+          [
+            require.resolve("./src/css/customFooter.css"),
+            require.resolve("./src/css/customNavbar.css"),
+            require.resolve("./src/css/custom.css"),
+          ],
         },
       }),
     ],
