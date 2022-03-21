@@ -35,12 +35,17 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 185%;
+    white-space: nowrap;
   }
   
   .footer-link-image {
     margin-right: 20px;
   }
   
+  .footer__link-item {
+    white-space: nowrap;
+  }
+
   .footer__items li {
     height: 40px;
   }
@@ -93,8 +98,6 @@
   
     .footer {
       height: 210px;
-      
-      /* padding: 45px; */
       background: #222222;
     }
   
