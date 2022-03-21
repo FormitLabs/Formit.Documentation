@@ -16,6 +16,7 @@ html[data-theme='dark'] .docs-doc-page {
 
 .main-wrapper {
   overflow: hidden;
+  position: relative
 }
 
 @media screen and (max-width: 834px) and (min-width: 376px)  {
