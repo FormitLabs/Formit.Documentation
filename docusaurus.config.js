@@ -1,9 +1,6 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const lightCodeTheme = require("prism-react-renderer/themes/github");
-const darkCodeTheme = require("prism-react-renderer/themes/dracula");
-
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "Insolations docusaurus",
@@ -22,7 +19,12 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         theme: {
-          customCss: require.resolve("./src/css/custom.css"),
+          customCss: 
+          [
+            require.resolve("./src/css/customFooter.css"),
+            require.resolve("./src/css/customNavbar.css"),
+            require.resolve("./src/css/custom.css"),
+          ],
         },
       }),
     ],
@@ -40,10 +42,14 @@ const config = {
           height: "40px",
         },
         items: [
-          { label: "Руководство пользователя", to: "/docs/Добро пожаловать/Руководство", className: "nav-first-item" },
-          { label: "Методические указания", to: "/docs/Добро пожаловать/Методические указания", className: "nav-other-item" },
-          { label: "Что нового", to: "/docs/Добро пожаловать/Методические указания", className: "nav-other-item" },
-          { label: "Ответы на вопросы", to: "/docs/Добро пожаловать/Методические указания", className: "nav-other-item" }
+          { label: "Руководство пользователя", to: "/docs/Руководство пользователя/Регистрация", className: "nav-first-item" },
+          { label: "Методические указания", to: "/docs/Методические указания", className: "nav-other-item" },
+          { label: "Что нового", to: "/docs/Что нового", className: "nav-other-item" },
+          { label: "Ответы на вопросы", to: "/docs/Ответы на вопросы", className: "nav-other-item" },
+          { label: "Корпоративный сайт", to: "https://altecsystems.ru/", className: "nav-link-item" },
+          { label: "Из 2D в BIM", to: "https://altecsystems.ru/2d-to-bim", className: "nav-link-item" },
+          { label: "Решение по Инсоляции и КЕО", to: "https://insolations.ru/", className: "nav-link-item" },
+          { label: "Разработка Altec", to: "https://insolations.ru/", className: "nav-link-item" },
         ],
       },
       footer: {
@@ -94,19 +100,19 @@ const config = {
             items: [
               {
                 label: "Руководство",
-                to: "/docs/Добро пожаловать/Руководство",
+                to: "/docs/Руководство пользователя/Регистрация",
               },
               {
                 label: "Методические указания",
-                to: "/docs/Добро пожаловать/Методические указания",
+                to: "/docs/Методические указания",
               },
               {
                 label: "Что нового",
-                to: "/docs/Добро пожаловать/",
+                to: "/docs/Что нового",
               },
               {
                 label: "Ответы на вопросы",
-                to: "/docs/Добро пожаловать/Как начать",
+                to: "/docs/Ответы на вопросы",
               },
             ],
           },

@@ -1,0 +1,149 @@
+.navbar__inner{
+    max-width: 1320px;
+    margin: 0 auto;
+}
+
+.navbar{
+    height: 80px;
+}
+
+.navbar__logo{
+    height: 42px;
+}
+
+.nav-first-item {
+    margin-left: 135px;
+}
+
+.nav-other-item {
+    margin-left: 20px;
+}
+
+html[data-theme='dark'] .navbar{
+    background: url("/static/img/navbar.svg") right, #000000;
+}
+
+html[data-theme='dark'] .menu__link {
+    color: white;
+}
+
+.nav-link-item {
+    display: none;
+}
+
+@media screen and (max-width: 996px)
+{
+  .navbar__items--right div {
+    display: block;
+  }
+
+  .navbar__item.nav-link-item {
+    display: none;
+}
+
+  .navbar__item {
+    display: block;
+  }
+
+  .navbar__toggle {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 834px) and (min-width: 376px)  {
+    .navbar__inner{
+        max-width: 745px;
+        margin: 0 auto;
+    }
+
+    .navbar{
+        height: 65px;
+    }
+
+    .nav-link-item {
+        display: none;
+    }
+
+    .navbar__items{
+        justify-content: space-around;
+    }
+
+    .navbar__link {
+        font-size: 10px;
+        font-weight: 400;
+        line-height: 130%;
+    }
+
+    .nav-first-item {
+        margin-left: 0px;
+    }
+
+    .navbar__logo {
+        width: 110px;
+        height: 25px;
+    }
+
+    .nav-other-item {
+        margin-left: 0px;
+    }
+
+    html[data-theme='dark'] .navbar{
+        background-size: 770px auto;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .navbar__items {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    html[data-theme='dark'] .navbar{
+        background-size: 330px auto;
+    }
+
+    .navbar__logo {
+        width: 170px;
+        height: 35px;
+    }
+
+    .navbar__items--right div {
+        display: none;
+    }
+
+    .navbar__item {
+        display: none;
+    }
+
+    .navbar__toggle {
+        display: inherit;
+    }
+
+    .navbar-sidebar {
+        width: 100%;
+    }
+
+    .menu__link {
+        height: 65px;
+        display: block;
+        font-weight: 400;
+        font-size: 21px;
+        line-height: 300%;
+        color: #262626;
+        white-space: nowrap;
+        border-top: 1px solid #E6E6E6;
+    }
+
+    .nav-first-item {
+        margin-left: 20px;
+        border-top: none;
+    }
+
+    .nav-link-item {
+        display: block;
+        text-indent: 15px;
+        margin-left: 35px;
+        background: url("/static/img/linkIcon.svg") no-repeat center left;
+        background-position: 0px 30px;
+    }
+}

@@ -1,7 +1,21 @@
 .features {
   display: flex;
   align-items: center;
-  justify-content: start;
   gap: 25px;
-  margin-bottom: 100px;
 }
+
+@media screen and (max-width: 834px) and (min-width: 376px) {
+  .features {
+    gap: 35px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .features {
+    scroll-snap-type: x none;
+    overflow-x: auto;
+    width: 375px;
+    padding: 0 30px;
+  }
+}
+

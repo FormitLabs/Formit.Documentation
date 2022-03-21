@@ -1,22 +1,9 @@
-.navbar__inner{
-  padding-left: 300px;
-  padding-right: 260px;
-}
-
 .selected-text {
   color: #3A53D7
 }
 
 html[data-theme='dark'] .selected-text {
   color: #8697EA
-}
-
-.navbar{
-  height: 80px;
-}
-
-.navbar__logo{
-  height: 42px;
 }
 
 html[data-theme='dark'] {
@@ -27,60 +14,26 @@ html[data-theme='dark'] .docs-doc-page {
   background: linear-gradient(90deg, #000000 1.35%, #3A53D7 182%);
 }
 
-.footer--dark {
-  --ifm-footer-background-color: #222222;
+.navbar-sidebar__back {
+  display: none;
 }
 
-.footer {
-  height: 280px;
-  padding-top: 50px;
+.main-wrapper {
+  overflow: hidden;
+  position: relative
 }
 
-html[data-theme='dark'] .navbar{
-  background: url("/static/img/navbar.svg") right, #000000;
+@media screen and (max-width: 834px) and (min-width: 376px)  {
+  
 }
 
-.nav-first-item {
-  margin-left: 135px;
-}
+@media screen and (max-width: 375px) {
+  .docs-doc-page {
+    max-width: 315px;
+    margin: 0 auto;
+  }
 
-.nav-other-item {
-  margin-left: 20px;
-}
-
-.footer-social-networks {
-  margin-top: 20px;
-  display: flex;
-  justify-content: space-between;
-  width: 155px;
-  margin-left: 100px;
-}
-
-.mail-info {
-  font-size: 17px;
-  color: white;
-}
-
-.number {
-  font-style: normal;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 200%;
-  margin-left: 100px;
-}
-
-.footer-link {
-  color: white;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 185%;
-}
-
-.footer-link-image {
-  margin-right: 20px;
-}
-
-.footer__items li {
-  height: 40px;
+  html[data-theme='dark'] {
+    background: linear-gradient(90deg, #000000 1.5%, #3A53D7 155%), #FFFFFF;
+  }
 }
