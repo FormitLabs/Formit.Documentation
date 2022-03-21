@@ -8,7 +8,7 @@ export default function HomepageHeader() {
       <h1 className={styles["header-text"]}>Библиотека знаний Altec<span className="selected-text">Insolations</span></h1>
       <Link
         className={styles["button-for-resources"]}
-        to="/docs/Добро пожаловать/Как начать">
+        to="/docs/Добро пожаловать">
         <span>Перейти к ресурсам</span>
       </Link>
       <div className={styles["video-wrapper"]}>
