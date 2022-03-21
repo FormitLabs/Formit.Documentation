@@ -8,8 +8,6 @@ export default function RenderFixedElements() {
             <div className={styles["ellipse-top"]}></div>
             <div className={styles["ellipse-right"]}></div>
             <img src="/img/pointsBottom.svg" alt='' className={styles["points-bottom"]}></img>
-            {/* <div className={styles["ellipse-right-owner"]}>
-            </div> */}
             <img src="/img/pointsTop.svg" alt='' className={styles["points-top"]}></img>
         </div>
     );

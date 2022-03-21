@@ -1,9 +1,7 @@
 .features {
   display: flex;
   align-items: center;
-  /* justify-content: start; */
   gap: 25px;
-  /* margin-bottom: 100px; */
 }
 
 @media screen and (max-width: 834px) and (min-width: 376px) {
