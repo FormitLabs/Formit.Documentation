@@ -23,11 +23,19 @@ html[data-theme='dark'] .navbar{
     background: url("/static/img/navbar.svg") right, #000000;
 }
 
+.nav-link-item {
+    display: none;
+}
+
 @media screen and (max-width: 996px)
 {
   .navbar__items--right div {
     display: block;
   }
+
+  .navbar__item.nav-link-item {
+    display: none;
+}
 
   .navbar__item {
     display: block;
@@ -46,6 +54,10 @@ html[data-theme='dark'] .navbar{
 
     .navbar{
         height: 65px;
+    }
+
+    .nav-link-item {
+        display: none;
     }
 
     .navbar__items{
@@ -78,9 +90,7 @@ html[data-theme='dark'] .navbar{
         justify-content: space-between;
     }
 
-    .nav-first-item {
-        margin-left: 20px;
-    }
+    
 
     .navbar__logo {
         width: 170px;
@@ -101,5 +111,29 @@ html[data-theme='dark'] .navbar{
 
     .navbar-sidebar {
         width: 100%;
+    }
+
+    .menu__link {
+        height: 65px;
+        display: block;
+        font-weight: 400;
+        font-size: 21px;
+        line-height: 300%;
+        color: #262626;
+        white-space: nowrap;
+        border-top: 1px solid #E6E6E6;
+    }
+
+    .nav-first-item {
+        margin-left: 20px;
+        border-top: none;
+    }
+
+    .nav-link-item {
+        display: block;
+        text-indent: 15px;
+        margin-left: 35px;
+        background: url("/static/img/linkIcon.svg") no-repeat center left;
+        background-position: 0px 30px;
     }
 }

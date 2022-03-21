@@ -48,7 +48,11 @@ const config = {
           { label: "Руководство пользователя", to: "/docs/Добро пожаловать/Руководство", className: "nav-first-item" },
           { label: "Методические указания", to: "/docs/Добро пожаловать/Методические указания", className: "nav-other-item" },
           { label: "Что нового", to: "/docs/Добро пожаловать/Методические указания", className: "nav-other-item" },
-          { label: "Ответы на вопросы", to: "/docs/Добро пожаловать/Методические указания", className: "nav-other-item" }
+          { label: "Ответы на вопросы", to: "/docs/Добро пожаловать/Методические указания", className: "nav-other-item" },
+          { label: "Корпоративный сайт", to: "/docs/Добро пожаловать/Методические указания", className: "nav-link-item" },
+          { label: "Из 2D в BIM", to: "/docs/Добро пожаловать/Методические указания", className: "nav-link-item" },
+          { label: "Решение по Инсоляции и КЕО", to: "/docs/Добро пожаловать/Методические указания", className: "nav-link-item" },
+          { label: "Разработка Altec", to: "/docs/Добро пожаловать/Методические указания", className: "nav-link-item" },
         ],
       },
       footer: {
