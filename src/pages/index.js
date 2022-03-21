@@ -15,9 +15,7 @@ export default function Home() {
       <div className={styles.layout}>
         <RenderFixedElements />
         <HomepageHeader />
-        <main>
-          <HomepageFeatures />
-        </main>
+        <HomepageFeatures />
       </div>
     </Layout>
   );
