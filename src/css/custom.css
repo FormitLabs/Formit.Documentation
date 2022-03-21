@@ -32,4 +32,8 @@ html[data-theme='dark'] .docs-doc-page {
     max-width: 315px;
     margin: 0 auto;
   }
+
+  html[data-theme='dark'] {
+    background: linear-gradient(90deg, #000000 1.5%, #3A53D7 155%), #FFFFFF;
+  }
 }
