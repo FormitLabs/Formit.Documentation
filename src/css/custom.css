@@ -1,37 +1,39 @@
-/**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
- */
-
-/* You can override the default Infima variables here. */
-:root {
-  --ifm-color-primary: #3a53d7;
-  --ifm-color-primary-dark: #2943cc;
-  --ifm-color-primary-darker: #2740c1;
-  --ifm-color-primary-darkest: #20349f;
-  --ifm-color-primary-light: #5167dc;
-  --ifm-color-primary-lighter: #5c71de;
-  --ifm-color-primary-lightest: #7e8ee5;
-  --ifm-code-font-size: 95%;
+.selected-text {
+  color: #3A53D7
 }
 
-.docusaurus-highlight-code-line {
-  background-color: rgba(0, 0, 0, 0.1);
-  display: block;
-  margin: 0 calc(-1 * var(--ifm-pre-padding));
-  padding: 0 var(--ifm-pre-padding);
+html[data-theme='dark'] .selected-text {
+  color: #8697EA
 }
 
-html[data-theme='dark'] .docusaurus-highlight-code-line {
-  background-color: rgba(0, 0, 0, 0.3);
-}
 html[data-theme='dark'] {
-  --ifm-color-primary: #8697ea;
-  --ifm-color-primary-dark: #677ce5;
-  --ifm-color-primary-darker: #576fe2;
-  --ifm-color-primary-darkest: #2846da;
-  --ifm-color-primary-light: #a5b2ef;
-  --ifm-color-primary-lighter: #b5bff2;
-  --ifm-color-primary-lightest: #e4e8fa;
+  background: linear-gradient(171.7deg, #000000 1.35%, #3A53D7 182%);
+}
+
+html[data-theme='dark'] .docs-doc-page {
+  background: linear-gradient(90deg, #000000 1.35%, #3A53D7 182%);
+}
+
+.navbar-sidebar__back {
+  display: none;
+}
+
+.main-wrapper {
+  overflow: hidden;
+  position: relative
+}
+
+@media screen and (max-width: 834px) and (min-width: 376px)  {
+  
+}
+
+@media screen and (max-width: 375px) {
+  .docs-doc-page {
+    max-width: 315px;
+    margin: 0 auto;
+  }
+
+  html[data-theme='dark'] {
+    background: linear-gradient(90deg, #000000 1.5%, #3A53D7 155%), #FFFFFF;
+  }
 }

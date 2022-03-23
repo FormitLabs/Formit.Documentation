@@ -1,0 +1,21 @@
+.features {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+@media screen and (max-width: 834px) and (min-width: 376px) {
+  .features {
+    gap: 35px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .features {
+    scroll-snap-type: x none;
+    overflow-x: auto;
+    width: 375px;
+    padding: 0 30px;
+  }
+}
+

@@ -1,11 +1,24 @@
-.features {
+.section {
   display: flex;
-  align-items: center;
-  padding: 2rem 0;
-  width: 100%;
+  justify-content: space-between;
+  margin-top: 50px;
+  margin-bottom: 75px;
 }
 
-.featureSvg {
-  height: 200px;
-  width: 200px;
+@media screen and (max-width: 834px) and (min-width: 376px) {
+  .section {
+    flex-direction: column;
+    max-width: 745px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .section {
+    flex-direction: column;
+    max-width: auto;
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 85px;
+  }
 }
