@@ -4,6 +4,7 @@
 }
 
 .navbar{
+    padding: 0;
     height: 80px;
 }
 
@@ -20,11 +21,21 @@
 }
 
 html[data-theme='dark'] .navbar{
-    background: url("/static/img/navbar.svg") right, #000000;
+    background: #000;
+}
+
+html[data-theme='dark'] .navbar__inner{
+    background: url("/static/img/navbar.svg");
+    background-position: 20px;
+    height: 80px;
 }
 
 html[data-theme='dark'] .menu__link {
     color: white;
+}
+
+html[data-theme='dark'] .menu__link:hover {
+    background: #191E3C;
 }
 
 .nav-link-item {
@@ -50,7 +61,7 @@ html[data-theme='dark'] .menu__link {
   }
 }
 
-@media screen and (max-width: 834px) and (min-width: 376px)  {
+@media screen and (max-width: 1024px) and (min-width: 551px)  {
     .navbar__inner{
         max-width: 745px;
         margin: 0 auto;
@@ -88,18 +99,19 @@ html[data-theme='dark'] .menu__link {
     }
 
     html[data-theme='dark'] .navbar{
-        background-size: 770px auto;
+        height: 65px;
+    }
+
+    html[data-theme='dark'] .navbar__inner{
+        background-size: cover;
+        height: 65px;
     }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 550px) {
     .navbar__items {
         flex-direction: row-reverse;
         justify-content: space-between;
-    }
-
-    html[data-theme='dark'] .navbar{
-        background-size: 330px auto;
     }
 
     .navbar__logo {
@@ -120,6 +132,10 @@ html[data-theme='dark'] .menu__link {
     }
 
     .navbar-sidebar {
+        width: 100%;
+    }
+
+    .navbar-sidebar__item {
         width: 100%;
     }
 

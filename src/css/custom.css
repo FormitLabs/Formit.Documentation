@@ -6,12 +6,12 @@ html[data-theme='dark'] .selected-text {
   color: #8697EA
 }
 
-html[data-theme='dark'] {
+html[data-theme='dark'] .main-wrapper {
   background: linear-gradient(171.7deg, #000000 1.35%, #3A53D7 182%);
 }
 
 html[data-theme='dark'] .docs-doc-page {
-  background: linear-gradient(90deg, #000000 1.35%, #3A53D7 182%);
+  background: #0A1030;
 }
 
 .navbar-sidebar__back {
@@ -23,13 +23,13 @@ html[data-theme='dark'] .docs-doc-page {
   position: relative
 }
 
-@media screen and (max-width: 834px) and (min-width: 376px)  {
+@media screen and (max-width: 1024px) and (min-width: 551px)  {
   
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 550px) {
   .docs-doc-page {
-    max-width: 315px;
+    max-width: calc(100vw - 60px);
     margin: 0 auto;
   }
 
