@@ -23,7 +23,6 @@ export default function HomepageHeader() {
           light={true}
           playing={true}
         />
-        {/* <video className={styles.video} src="https://www.youtube.com/watch?v=jWUSUxqEsqM"></video> */}
       </div>
     </header>
   );

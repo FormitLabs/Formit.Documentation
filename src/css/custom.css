@@ -9,10 +9,6 @@ html[data-theme='dark'] .selected-text {
 html[data-theme='dark'] .main-wrapper {
   background: linear-gradient(171.7deg, #000000 1.35%, #3A53D7 182%);
 }
-/* 
-html[data-theme='dark'] {
-  background: linear-gradient(171.7deg, #000000 1.35%, #3A53D7 182%);
-} */
 
 html[data-theme='dark'] .docs-doc-page {
   background: #0A1030;
