@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from '@docusaurus/Link';
 import styles from './HomepageHeader.module.css';
+import ReactPlayer from "react-player/lazy";
 
 export default function HomepageHeader() {
   return (
@@ -13,7 +14,14 @@ export default function HomepageHeader() {
       </Link>
       <div className={styles["video-wrapper"]}>
         <div className={styles.rectangle} />
-        <img className={styles.video} src="/img/video.png" />
+        <ReactPlayer
+          className={styles.video}
+          url="https://www.youtube.com/watch?v=jWUSUxqEsqM"
+          controls={true}
+          light={true}
+          playing={true}
+        />
+        {/* <video className={styles.video} src="https://www.youtube.com/watch?v=jWUSUxqEsqM"></video> */}
       </div>
     </header>
   );
