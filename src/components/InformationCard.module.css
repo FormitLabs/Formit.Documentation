@@ -40,7 +40,7 @@ html[data-theme='light'] .info-description {
     .info-container {
         min-width: auto;
         min-height: auto;
-        width: 27vh;
+        width: 27vw;
         height: 245px;
         padding: 25px 20px;
         flex: 1;
