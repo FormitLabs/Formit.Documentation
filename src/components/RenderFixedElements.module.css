@@ -46,7 +46,7 @@
   position: absolute;
   bottom: -70px;
   right: -135px;
-  z-index: -1;
+  z-index: 1;
 }
 
 html[data-theme='dark'] .ellipse-left {
@@ -76,13 +76,13 @@ html[data-theme='dark'] .ellipse-top {
   height: 560px;
   left: 950px;
   top: 20px;
+  z-index: 1;
   background: radial-gradient(50% 50% at 50% 50%, rgba(58, 83, 215, 0.62) 0%, rgba(58, 83, 215, 0) 100%);
   filter: blur(150px);
 }
 
-@media screen and (max-width: 834px) {
+@media screen and (max-width: 1024px) {
   .ellipse-left {
-    position: absolute;
     width: 395px;
     height: 405px;
     left: -170px;
@@ -93,7 +93,6 @@ html[data-theme='dark'] .ellipse-top {
   }
   
   .ellipse-top {
-    position: absolute;
     width: 420px;
     height: 420px;
     left: 275px;
@@ -104,7 +103,6 @@ html[data-theme='dark'] .ellipse-top {
   }
   
   .ellipse-right {
-    position: absolute;
     width: 620px;
     height: 620px;
     left: 440px;
@@ -115,7 +113,6 @@ html[data-theme='dark'] .ellipse-top {
   }
 
   .points-top {
-    position: absolute;
     width: 410px;
     height: 180px;
     left: -305px;
@@ -123,16 +120,14 @@ html[data-theme='dark'] .ellipse-top {
   }
   
   .points-bottom {
-    position: absolute;
     left: 625px;
     top: 640px;
-    z-index: -1;
+    z-index: 1;
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 550px) {
   .ellipse-left {
-    position: absolute;
     width: 490px;
     height: 490px;
     left: -245px;
@@ -143,18 +138,15 @@ html[data-theme='dark'] .ellipse-top {
   }
   
   .ellipse-top {
-    position: absolute;
     width: 430px;
     height: 430px;
     left: 75px;
     top: 105px;
-    z-index: -1;
     background: radial-gradient(50% 50% at 50% 50%, rgba(117, 52, 255, 0.2442) 0%, rgba(255, 255, 255, 0) 100%);
     filter: blur(150px);
   }
   
   .ellipse-right {
-    position: absolute;
     width: 495px;
     height: 495px;
     left: 95px;
@@ -165,7 +157,6 @@ html[data-theme='dark'] .ellipse-top {
   }
 
   .points-top {
-    position: absolute;
     width: 350px;
     height: 155px;
     left: -295px;
@@ -173,9 +164,8 @@ html[data-theme='dark'] .ellipse-top {
   }
   
   .points-bottom {
-    position: absolute;
     left: 270px;
     top: 1015px;
-    z-index: -1;
+    z-index: 1;
   }
 }

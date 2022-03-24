@@ -4,17 +4,17 @@
   gap: 25px;
 }
 
-@media screen and (max-width: 834px) and (min-width: 376px) {
+@media screen and (max-width: 1024px) and (min-width: 551px) {
   .features {
     gap: 35px;
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 550px) {
   .features {
     scroll-snap-type: x none;
     overflow-x: auto;
-    width: 375px;
+    width: calc(100vw - 60px);
     padding: 0 30px;
   }
 }
