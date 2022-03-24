@@ -130,7 +130,7 @@ html[data-theme='dark'] .ellipse-top {
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 550px) {
   .ellipse-left {
     position: absolute;
     width: 490px;

@@ -36,7 +36,7 @@ html[data-theme='light'] .info-description {
     color: #262626;
 }
 
-@media screen and (max-width: 834px) and (min-width: 376px) {
+@media screen and (max-width: 834px) and (min-width: 551px) {
     .info-container {
         min-width: auto;
         min-height: auto;
@@ -59,7 +59,7 @@ html[data-theme='light'] .info-description {
     }
 }
 
-@media screen and (max-width: 375px)  {
+@media screen and (max-width: 550px)  {
     .info-container {
         min-width: auto;
         min-height: auto;

@@ -62,7 +62,7 @@
     z-index: -1;
 }
 
-@media screen and (max-width: 834px) and (min-width: 376px) {
+@media screen and (max-width: 834px) and (min-width: 551px) {
     .header-first-columns {
         margin-top: 45px;
         display: flex;
@@ -98,7 +98,7 @@
     }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 550px) {
     .header {
         margin-top: 45px;
         grid-template-areas: 

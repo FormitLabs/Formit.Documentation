@@ -23,11 +23,11 @@ html[data-theme='dark'] .docs-doc-page {
   position: relative
 }
 
-@media screen and (max-width: 834px) and (min-width: 376px)  {
+@media screen and (max-width: 834px) and (min-width: 551px)  {
   
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 550px) {
   .docs-doc-page {
     max-width: 315px;
     margin: 0 auto;

@@ -1,5 +1,5 @@
 .layout {
-  height: calc(100vh - 80px);
+  /* height: calc(100vh - 80px); */
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -8,14 +8,14 @@
   overflow: hidden;
 }
 
-@media screen and (max-width: 834px) and (min-width: 376px) {
+@media screen and (max-width: 834px) and (min-width: 551px) {
   .layout {
     align-items: center;
     height: auto;
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 550px) {
   .layout {
     align-items: center;
     height: auto;

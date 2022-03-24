@@ -54,7 +54,7 @@ html[data-theme='dark'] .menu__link:hover {
   }
 }
 
-@media screen and (max-width: 834px) and (min-width: 376px)  {
+@media screen and (max-width: 834px) and (min-width: 551px)  {
     .navbar__inner{
         max-width: 745px;
         margin: 0 auto;
@@ -96,7 +96,7 @@ html[data-theme='dark'] .menu__link:hover {
     }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 550px) {
     .navbar__items {
         flex-direction: row-reverse;
         justify-content: space-between;
