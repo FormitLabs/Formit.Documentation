@@ -43,13 +43,13 @@
 
 .video-wrapper{
     grid-area: C;
-    padding: 75px 35px;
-    margin-top: 20px;
+    width: 27.5vw;
+    height: 15.5vw;
+    margin: 75px 35px;
+    margin-top: 95px;
 }
 
 .video {
-    width: 100%;
-    height: 100%;
     top: -100%;
     position: relative;
 }
@@ -60,6 +60,7 @@
     height: 100%;
     transform: rotate(18.7deg);
     z-index: -1;
+    position: relative;
 }
 
 @media screen and (max-width: 1024px) and (min-width: 551px) {
@@ -93,8 +94,9 @@
     }
 
     .video-wrapper{
-        padding: 45px 20px;
-        margin-top: 0px;
+        margin: 45px 20px;
+        width: 39vw;
+        height: 22vw;
     }
 }
 
@@ -111,7 +113,7 @@
     }
 
     .header-first-columns {
-        max-width: 315px;
+        max-width: calc(100vw - 60px);
         margin: 0 auto;
         margin-top: 45px;
         display: flex;
@@ -137,24 +139,19 @@
     }
 
     .video-wrapper{
-        padding: 45px 30px;
-        margin-top: 30px;
+        margin: 45px 30px;
+        height: 200px;
+        width: 84vw;
+        height: 47.25vw;
     }
     
     .video {
-        width: 100%;
-        height: 100%;
-        top: 0;
+        top: -100%;
+        position: relative;
     }
     
     .rectangle {
-        border: 2px dashed #3A53D7;
         width: 100%;
         height: 100%;
-        width: 320px;
-        height: 180px;
-        transform: rotate(18.7deg);
-        z-index: -1;
-        position: absolute;
     }
 }

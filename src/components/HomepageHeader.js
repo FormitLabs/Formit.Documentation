@@ -16,6 +16,8 @@ export default function HomepageHeader() {
         <div className={styles.rectangle} />
         <ReactPlayer
           className={styles.video}
+          width="inherit"
+          height="inherit"
           url="https://www.youtube.com/watch?v=jWUSUxqEsqM"
           controls={true}
           light={true}

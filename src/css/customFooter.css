@@ -146,9 +146,9 @@
     }
   
     .footer-social-networks {
-      position: relative;
+      /* position: relative;
       left: 200px;
-      bottom: 55px;
+      bottom: 55px; */
       margin: 0;
       display: flex;
       justify-content: space-between;

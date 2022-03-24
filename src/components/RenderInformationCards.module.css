@@ -14,7 +14,7 @@
   .features {
     scroll-snap-type: x none;
     overflow-x: auto;
-    width: 550px;
+    width: calc(100vw - 60px);
     padding: 0 30px;
   }
 }
