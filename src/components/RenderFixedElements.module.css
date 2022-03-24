@@ -76,6 +76,7 @@ html[data-theme='dark'] .ellipse-top {
   height: 560px;
   left: 950px;
   top: 20px;
+  z-index: 1;
   background: radial-gradient(50% 50% at 50% 50%, rgba(58, 83, 215, 0.62) 0%, rgba(58, 83, 215, 0) 100%);
   filter: blur(150px);
 }
@@ -141,7 +142,6 @@ html[data-theme='dark'] .ellipse-top {
     height: 430px;
     left: 75px;
     top: 105px;
-    z-index: -1;
     background: radial-gradient(50% 50% at 50% 50%, rgba(117, 52, 255, 0.2442) 0%, rgba(255, 255, 255, 0) 100%);
     filter: blur(150px);
   }
