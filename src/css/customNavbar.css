@@ -114,10 +114,6 @@ html[data-theme='dark'] .menu__link:hover {
         justify-content: space-between;
     }
 
-    /* html[data-theme='dark'] .navbar{
-        background-size: 330px auto;
-    } */
-
     .navbar__logo {
         width: 170px;
         height: 35px;
