@@ -1,5 +1,4 @@
 .layout {
-  /* height: calc(100vh - 80px); */
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -19,7 +18,5 @@
   .layout {
     align-items: center;
     height: auto;
-    /* max-width: 315px;
-    margin: 0 auto; */
   }
 }
