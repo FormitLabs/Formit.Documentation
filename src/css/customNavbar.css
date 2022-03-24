@@ -135,6 +135,10 @@ html[data-theme='dark'] .menu__link:hover {
         width: 100%;
     }
 
+    .navbar-sidebar__item {
+        width: 100%;
+    }
+
     .menu__link {
         height: 65px;
         display: block;
