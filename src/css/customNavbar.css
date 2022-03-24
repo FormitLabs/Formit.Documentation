@@ -25,6 +25,9 @@ html[data-theme='dark'] .navbar{
 
 html[data-theme='dark'] .menu__link {
     color: white;
+}
+
+html[data-theme='dark'] .menu__link:hover {
     background: #191E3C;
 }
 
