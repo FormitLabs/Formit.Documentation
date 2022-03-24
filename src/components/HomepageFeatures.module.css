@@ -5,7 +5,7 @@
   margin-bottom: 75px;
 }
 
-@media screen and (max-width: 834px) and (min-width: 551px) {
+@media screen and (max-width: 1024px) and (min-width: 551px) {
   .section {
     flex-direction: column;
     max-width: 745px;

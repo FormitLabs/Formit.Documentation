@@ -62,7 +62,7 @@
     z-index: -1;
 }
 
-@media screen and (max-width: 834px) and (min-width: 551px) {
+@media screen and (max-width: 1024px) and (min-width: 551px) {
     .header-first-columns {
         margin-top: 45px;
         display: flex;

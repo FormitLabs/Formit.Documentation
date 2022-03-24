@@ -50,7 +50,7 @@
     height: 40px;
   }
 
-  @media screen and (max-width: 996px) and (min-width: 551px)  {
+  @media screen and (max-width: 1024px) and (min-width: 551px)  {
     .row .col.col.col {
       flex-basis: 0;
       margin-bottom: 0;
