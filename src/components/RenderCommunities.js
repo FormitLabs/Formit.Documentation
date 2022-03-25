@@ -6,7 +6,7 @@ const communityList = [
       src: '/img/tgIcon.svg',
       description: (
         <>
-          Мы активно развиваем сообщество AltecInsolations в <span className="selected-text">Telegram</span>-канале.
+          Мы активно развиваем сообщество AltecInsolations в <a href="https://t.me/altecinsolations" target="_blank" className="selected-text">Telegram</a>-канале.
           Подписывайтесь, чтобы ничего не пропустить!
         </>
       )

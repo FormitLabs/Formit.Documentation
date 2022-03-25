@@ -127,15 +127,9 @@ const config = {
               {
                 html: `
                     <div class="footer-social-networks">
-                      <a href="https://www.youtube.com/channel/UCgLd-rl6CpRfzbrOMMYxgBQ" target="_blank">
-                        <img src="/img/youtube-footer.svg" />
-                      </a>
-                      <a href="https://www.instagram.com/altecsystems/" target="_blank">
-                        <img src="/img/ig-footer.svg" />
-                      </a>
-                      <a href="https://telegram.org/" target="_blank">
-                        <img src="/img/tg-footer.svg" />
-                      </a>
+                      <a href="https://www.youtube.com/channel/UCgLd-rl6CpRfzbrOMMYxgBQ" class="youtube-footer" target="_blank"></a>
+                      <a href="https://www.instagram.com/altecsystems/" class="ig-footer" target="_blank"></a>
+                      <a href="https://t.me/altecinsolations" class="tg-footer" target="_blank"></a>
                     </div>
                   `
               },

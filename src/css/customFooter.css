@@ -2,6 +2,18 @@
     --ifm-footer-background-color: #222222;
   }
   
+  .footer-social-networks a {
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+  }
+
+  .footer-social-networks a:hover {
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+  }
+
   .footer {
     height: 280px;
     padding-top: 50px;
@@ -11,9 +23,34 @@
   .footer-social-networks {
     margin-top: 20px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 155px;
     margin-left: 100px;
+  }
+
+  .youtube-footer {
+    background: url("/static/img/youtube-footer.svg") no-repeat;
+  }
+
+  .youtube-footer:hover {
+    background: url("/static/img/youtube-hover.svg") no-repeat;
+  }
+
+  .tg-footer {
+    background: url("/static/img/tg-footer.svg") no-repeat;
+  }
+
+  .tg-footer:hover {
+    background: url("/static/img/tg-hover.svg") no-repeat
+  }
+
+  .ig-footer {
+    display: none;
+    background: url("/static/img/ig-footer.svg") no-repeat;
+  }
+
+  .ig-footer:hover {
+    background: url("/static/img/ig-hover.svg") no-repeat;
   }
   
   .mail-info {
@@ -104,6 +141,13 @@
     .footer-social-networks a {
       width: 30px;
       height: 30px;
+      background-size: cover;
+    }
+
+    .footer-social-networks a:hover {
+      width: 30px;
+      height: 30px;
+      background-size: cover;
     }
   
     .footer__link-item {
@@ -161,6 +205,13 @@
     .footer-social-networks a {
       width: 30px;
       height: 30px;
+      background-size: cover;
+    }
+
+    .footer-social-networks a:hover {
+      width: 30px;
+      height: 30px;
+      background-size: cover;
     }
   
     .footer__col {
