@@ -28,6 +28,14 @@
     margin-left: 100px;
   }
 
+  .vk-footer {
+    background: url("/static/img/vk.svg") no-repeat;
+  }
+
+  .vk-footer:hover {
+    background: url("/static/img/vk-hover.svg") no-repeat;
+  }
+
   .youtube-footer {
     background: url("/static/img/youtube-footer.svg") no-repeat;
   }
