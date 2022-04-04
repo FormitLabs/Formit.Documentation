@@ -39,6 +39,7 @@
 .button-for-resources:hover {
     color: white;
     text-decoration: none;
+    background: #3956EA;
 }
 
 .video-wrapper{
