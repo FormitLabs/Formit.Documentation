@@ -127,7 +127,7 @@ const config = {
               {
                 html: `
                     <div class="footer-social-networks">
-                      <a href="https://vk.ru" class="vk-footer" target="_blank"></a>
+                      <a href="https://vk.com/public212316393" class="vk-footer" target="_blank"></a>
                       <a href="https://www.youtube.com/channel/UCgLd-rl6CpRfzbrOMMYxgBQ" class="youtube-footer" target="_blank"></a>
                       <a href="https://www.instagram.com/altecsystems/" class="ig-footer" target="_blank"></a>
                       <a href="https://t.me/altecinsolations" class="tg-footer" target="_blank"></a>
