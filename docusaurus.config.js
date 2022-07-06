@@ -44,7 +44,7 @@ const config = {
         items: [
           { label: "Руководство пользователя", to: "/docs/Руководство пользователя/Регистрация", className: "nav-first-item" },
           { label: "Методические указания", to: "/docs/Методические указания", className: "nav-other-item" },
-          { label: "Что нового", to: "/docs/Что нового", className: "nav-other-item" },
+          { label: "Что нового", to: "/docs/Что нового/Релиз от 05.07.2022", className: "nav-other-item" },
           { label: "Ответы на вопросы", to: "/docs/Ответы на вопросы", className: "nav-other-item" },
           { label: "Корпоративный сайт", to: "https://altecsystems.ru/", className: "nav-link-item" },
           { label: "Из 2D в BIM", to: "https://altecsystems.ru/2d-to-bim", className: "nav-link-item" },
@@ -108,7 +108,7 @@ const config = {
               },
               {
                 label: "Что нового",
-                to: "/docs/Что нового",
+                to: "/docs/Что нового/Релиз от 05.07.2022",
               },
               {
                 label: "Ответы на вопросы",
