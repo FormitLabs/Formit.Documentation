@@ -119,10 +119,7 @@ const config = {
           {
             items: [
               {
-                html: `<span class="number">8 800 301-81-97</span>`
-              },
-              {
-                html: `<span class="number">8 343 247-24-04</span>`
+                html: `<span class="number">8 343 361-01-00</span>`
               },
               {
                 html: `
