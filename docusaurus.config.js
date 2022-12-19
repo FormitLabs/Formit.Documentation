@@ -43,7 +43,7 @@ const config = {
         },
         items: [
           { label: "Руководство пользователя", to: "/docs/Руководство пользователя/Регистрация", className: "nav-first-item" },
-          { label: "Методические указания", to: "/docs/Методические указания", className: "nav-other-item" },
+          { label: "Методические указания", to: "/docs/Методические указания/Возможности комплекса", className: "nav-other-item" },
           { label: "Что нового", to: "/docs/Что нового/Релиз от 05.07.2022", className: "nav-other-item" },
           { label: "Ответы на вопросы", to: "/docs/Ответы на вопросы", className: "nav-other-item" },
           { label: "Корпоративный сайт", to: "https://altecsystems.ru/", className: "nav-link-item" },
@@ -104,7 +104,7 @@ const config = {
               },
               {
                 label: "Методические указания",
-                to: "/docs/Методические указания",
+                to: "/docs/Методические указания/Возможности комплекса",
               },
               {
                 label: "Что нового",
