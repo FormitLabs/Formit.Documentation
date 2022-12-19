@@ -3,8 +3,8 @@
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "Insolations docusaurus",
-  tagline: "Dinosaurs are cool",
+  title: "Altec Insolations Docusaurus",
+  tagline: "Altec Insolations",
   url: "https://your-docusaurus-test-site.com",
   baseUrl: "/",
   onBrokenLinks: "throw",
