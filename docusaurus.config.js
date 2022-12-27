@@ -42,14 +42,14 @@ const config = {
           height: "40px",
         },
         items: [
-          { label: "Руководство пользователя", to: "/docs/Руководство пользователя/Регистрация", className: "nav-first-item" },
-          { label: "Методические указания", to: "/docs/Методические указания/Возможности комплекса", className: "nav-other-item" },
-          { label: "Что нового", to: "/docs/Что нового/Релиз от 05.07.2022", className: "nav-other-item" },
-          { label: "Ответы на вопросы", to: "/docs/Ответы на вопросы", className: "nav-other-item" },
+          { label: "Руководство пользователя", to: "/docs/manual/registration", className: "nav-first-item" },
+          { label: "Методические указания", to: "/docs/guidelines/possibilities", className: "nav-other-item" },
+          { label: "Что нового", to: "/docs/changelog/19-12-2022", className: "nav-other-item" },
+          { label: "Ответы на вопросы", to: "/docs/questions", className: "nav-other-item" },
           { label: "Корпоративный сайт", to: "https://altecsystems.ru/", className: "nav-link-item" },
           { label: "Из 2D в BIM", to: "https://altecsystems.ru/2d-to-bim", className: "nav-link-item" },
-          { label: "Решение по Инсоляции и КЕО", to: "https://insolations.ru/", className: "nav-link-item" },
-          { label: "Разработка Altec", to: "https://insolations.ru/", className: "nav-link-item" },
+          { label: "Решение по Инсоляции и КЕО", to: "https://altecsystems.ru/insolations/", className: "nav-link-item" },
+          { label: "Разработка Altec", to: "https://bim.insolations.ru/", className: "nav-link-item" },
         ],
       },
       footer: {
@@ -100,19 +100,19 @@ const config = {
             items: [
               {
                 label: "Руководство",
-                to: "/docs/Руководство пользователя/Регистрация",
+                to: "/docs/manual/registration",
               },
               {
                 label: "Методические указания",
-                to: "/docs/Методические указания/Возможности комплекса",
+                to: "/docs/guidelines/possibilities",
               },
               {
                 label: "Что нового",
-                to: "/docs/Что нового/Релиз от 05.07.2022",
+                to: "/docs/changelog/19-12-2022",
               },
               {
                 label: "Ответы на вопросы",
-                to: "/docs/Ответы на вопросы",
+                to: "/docs/questions",
               },
             ],
           },
