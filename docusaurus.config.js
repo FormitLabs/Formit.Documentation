@@ -93,14 +93,14 @@ const config = {
               },
               {
                 html: `
-                    <a href="https://insolations.ru/" class="footer-link" target="_blank" rel="noopener noreferrer">
+                    <a href="https://altecsystems.ru/insolations/" class="footer-link" target="_blank" rel="noopener noreferrer">
                       <img src="/img/linkIcon.svg" alt="Изображение сторонней ссылки" class="footer-link-image"/>Решение по Инсоляции КЕО
                     </a>
                   `,
               },
               {
                 html: `
-                    <a href="https://insolations.ru/" class="footer-link" target="_blank" rel="noopener noreferrer">
+                    <a href="https://altecsystems.ru/insolations/" class="footer-link" target="_blank" rel="noopener noreferrer">
                       <img src="/img/linkIcon.svg" alt="Изображение сторонней ссылки" class="footer-link-image"/>Разработка Altec
                     </a>
                   `,
