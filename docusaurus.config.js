@@ -18,6 +18,11 @@ const config = {
       "@docusaurus/preset-classic",
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
+        docs: {
+          exclude: ['**/_*','**/_*/**'],
+          sidebarPath:  require.resolve("./sidebars.js"),
+
+        },
         theme: {
           customCss:
           [
