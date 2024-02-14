@@ -4,7 +4,7 @@ export default function Image({width, image, title}){
     return(
     <div style={{ display: "flex", flexDirection: "column", alignItems: "center", marginBottom: "16px" }}>
         <img src={image} alt={title} width={width} style={{ textAlign: "center" }} />
-        <i>{title}</i>
+        {title && <i>{title}</i>}
     </div>
     );
 }
