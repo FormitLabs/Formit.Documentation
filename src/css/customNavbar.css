@@ -13,11 +13,18 @@
 }
 
 .nav-first-item {
-    margin-left: 135px;
+    margin-left: 100px;
 }
 
 .nav-other-item {
-    margin-left: 20px;
+    margin-left: 10px;
+}
+
+.nav-first-item,.nav-other-item{
+    word-wrap: nowrap;
+    text-overflow: ellipsis;
+    overflow-x: clip;
+    white-space: nowrap;
 }
 
 html[data-theme='dark'] .navbar{
