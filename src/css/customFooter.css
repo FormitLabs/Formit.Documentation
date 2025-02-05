@@ -23,7 +23,7 @@
   .footer-social-networks {
     margin-top: 20px;
     display: flex;
-    justify-content: space-around;
+    justify-content: start;
     width: 155px;
     margin-left: 100px;
   }
