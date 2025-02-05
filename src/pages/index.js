@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <Layout
       title="Библиотека знаний"
-      description="Руководство по работе с AltecInsolations - программным комплексом для расчета инсоляции и КЕО">
+      description="Руководство по работе с Formit - программным комплексом для расчета инсоляции и КЕО">
       <div className={styles.layout}>
         <RenderFixedElements />
         <HomepageHeader />

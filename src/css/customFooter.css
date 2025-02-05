@@ -23,7 +23,7 @@
   .footer-social-networks {
     margin-top: 20px;
     display: flex;
-    justify-content: space-around;
+    justify-content: start;
     width: 155px;
     margin-left: 100px;
   }
@@ -232,7 +232,7 @@
     }
   
     .footer {
-      height: 250px;
-      padding: 45px;
+      height:auto;
+      padding: 40px 45px 0 45px;
     }
 }

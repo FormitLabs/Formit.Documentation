@@ -5,6 +5,7 @@
     min-width: 240px;
     height: 29vh;
     min-height: 255px;
+    max-height: 350px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -41,7 +42,7 @@ html[data-theme='light'] .info-description {
         min-width: auto;
         min-height: auto;
         width: 27vw;
-        height: 245px;
+        height: 300px;
         padding: 25px 20px;
         flex: 1;
     }

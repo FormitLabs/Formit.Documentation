@@ -4,6 +4,7 @@
     "A A C C C"
     "A A C C C"
     "B B C C C";
+    min-height: 40vh;
 }
 
 .header-first-columns {
@@ -24,16 +25,18 @@
 .button-for-resources {
     grid-area: B;
     background: #324CD4;
-    border-radius: 4px;
+    border-radius: 10px;
     width: 320px;
     height: 60px;
     color: white;
-    font-size: 20px;
+    font-size: 18px;
+    font-weight: 600;
     text-decoration: none;
     text-transform: uppercase;
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: background-color 200ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-for-resources:hover {
@@ -73,12 +76,10 @@
     }
 
     .header {
+        min-height: 25vh;
         max-width: 745px;
-        margin: 30px auto;
-        grid-template-areas: 
-        "A C C C"
-        "A C C C"
-        "B C C C";
+        margin: 0 auto;
+        width: calc(100vw - 90px);
     }
 
     .header-text {
@@ -111,6 +112,7 @@
         "B B";
         justify-items: center;
         margin-bottom: 0px;
+        min-height: 30vh;
     }
 
     .header-first-columns {
@@ -124,11 +126,11 @@
 
     .header-text {
         font-weight: 600;
-        font-size: 36px;
-        line-height: 42px;
+        font-size: 40px;
+        line-height: 50px;
         text-align: center;
         align-content: stretch;
-        width: 315px;
+        width: auto;
         height: 130px;
     }
 
