@@ -1,6 +1,6 @@
 # Amaterasu.Documentation
 
-Библиотека знаний сервиса `FormIt` (ранее `AltecInsolations`), созданная на базе [Docusaurus](https://docusaurus.io/).
+Библиотека знаний сервиса `Formit` (ранее `AltecInsolations`), созданная на базе [Docusaurus](https://docusaurus.io/).
 
 ## Правила редактирования документации
 
