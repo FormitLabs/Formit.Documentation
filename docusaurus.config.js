@@ -43,7 +43,7 @@ const config = {
           srcDark: "img/formit-text-white.svg",
           width: "90px",
           height: "22px",
-          style: { marginLeft: "10px" },
+          style: { marginLeft: "10px", color: "transparent" },
         },
         items: [
           {
