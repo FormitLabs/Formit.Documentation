@@ -1,8 +1,7 @@
 .section {
   display: flex;
   justify-content: space-between;
-  margin-top: 50px;
-  margin-bottom: 75px;
+  padding: 50px 0 75px 0;
 }
 
 @media screen and (max-width: 1024px) and (min-width: 551px) {
@@ -16,9 +15,7 @@
 @media screen and (max-width: 550px) {
   .section {
     flex-direction: column;
-    max-width: auto;
     margin: auto;
-    margin-top: 60px;
-    margin-bottom: 85px;
+    padding: 60px 0 85px 0;
   }
 }
