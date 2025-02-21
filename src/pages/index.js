@@ -5,6 +5,10 @@ import HomepageFeatures from '../components/HomepageFeatures';
 import HomepageHeader from '../components/HomepageHeader';
 import RenderFixedElements from '../components/RenderFixedElements';
 
+// FIXME: вся стилизация документации сделана некорректно.
+//  Обратиться к этой ссылке для грамотной работы с цветами и упрощения переопределяющих друг друга css стилей:
+//  https://docusaurus.io/docs/styling-layout
+
 export default function Home() {
   // const { siteConfig } = useDocusaurusContext();
   return (
