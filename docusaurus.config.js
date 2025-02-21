@@ -13,6 +13,11 @@ const config = {
   organizationName: "formit",
   projectName: "amaterasu.documentation",
 
+  i18n: {
+    defaultLocale: "ru",
+    locales: ["ru"],
+  },
+
   presets: [
     [
       "@docusaurus/preset-classic",
