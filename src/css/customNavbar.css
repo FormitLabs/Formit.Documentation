@@ -27,13 +27,12 @@
     white-space: nowrap;
 }
 
-html[data-theme='dark'] .navbar{
-    background: #000;
-}
+/* Use bg color from theme variable */
+/*html[data-theme='dark'] .navbar{
+   background: #000 linear-gradient(90deg, rgba(17, 26, 77, 1) 10%, rgba(17, 26, 77, 0) 100%);
+}*/
 
 html[data-theme='dark'] .navbar__inner{
-    background: url("/static/img/navbar.svg");
-    background-position: 20px;
     height: 80px;
 }
 
@@ -42,7 +41,11 @@ html[data-theme='dark'] .menu__link {
 }
 
 html[data-theme='dark'] .menu__link:hover {
-    background: #191E3C;
+    background: rgba(189, 200, 255, 0.2);
+}
+
+html[data-theme='dark'] .menu__link--active:not(.menu__link--sublist) {
+    background-color: #4963ec;
 }
 
 .nav-link-item {
