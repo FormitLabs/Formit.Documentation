@@ -1,19 +1,20 @@
+import styles from "./Communities.module.css";
 import React from "react";
-import styles from "./RenderCommunities.module.css";
+import TgIcon from "/img/tgIcon.svg";
 
-function Community({ src, alt, children }) {
+function CommunityCard({ Icon, children }) {
   return (
     <div className={styles["community-container"]}>
-      <img src={src} alt={alt} />
+      <Icon className={styles["icon"]} />
       <p className={styles["community-description"]}>{children}</p>
     </div>
   );
 }
 
-export default function RenderCommunities() {
+export default function Communities() {
   return (
     <div className={styles.communities}>
-      <Community src="/img/tgIcon.svg" alt="Логотип Telegram">
+      <CommunityCard Icon={TgIcon}>
         Мы активно развиваем сообщество <b>Formit</b> в&nbsp;
         <a
           href="https://t.me/altecformit"
@@ -26,7 +27,7 @@ export default function RenderCommunities() {
         .
         <br />
         Подписывайтесь, чтобы ничего не&nbsp;пропустить!
-      </Community>
+      </CommunityCard>
     </div>
   );
 }

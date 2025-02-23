@@ -29,7 +29,7 @@ html[data-theme="dark"] .container {
   color: var(--bottom-right-pattern-color);
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 550.9999px) {
   .top-left-pattern,
   .bottom-right-pattern {
     display: none;

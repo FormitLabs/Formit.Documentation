@@ -1,7 +1,7 @@
-import SmallDotPattern from "/img/smallDotPattern.svg";
-import LargeDotPattern from "/img/largeDotPattern.svg";
 import styles from "./DotPatternsBg.module.css";
 import React from "react";
+import SmallDotPattern from "/img/smallDotPattern.svg";
+import LargeDotPattern from "/img/largeDotPattern.svg";
 
 export default function DotPatternsBg() {
   return (

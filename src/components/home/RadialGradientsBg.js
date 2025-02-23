@@ -1,5 +1,5 @@
-import React from "react";
 import styles from "./RadialGradientsBg.module.css";
+import React from "react";
 
 export default function RadialGradientsBg() {
   return (
