@@ -1,5 +1,10 @@
 /* TODO: поправить, что иконки заданы как `background` + улучшить адаптив, такое невозможно нормально настраивать */
 
+.footer {
+  --ifm-footer-background-color: #222222;
+  padding-top: 65px;
+}
+
 .footer-social-networks a {
   width: 40px;
   height: 40px;
@@ -10,11 +15,6 @@
   width: 40px;
   height: 40px;
   background-size: cover;
-}
-
-.footer {
-  padding-top: 65px;
-  background: #262626;
 }
 
 .footer-social-networks {
