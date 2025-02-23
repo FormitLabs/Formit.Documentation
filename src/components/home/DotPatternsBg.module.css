@@ -1,6 +1,8 @@
 .container {
   --top-left-pattern-color: rgba(58, 83, 215, 0.65);
   --bottom-right-pattern-color: #fff;
+
+  z-index: 2;
 }
 
 html[data-theme="dark"] .container {

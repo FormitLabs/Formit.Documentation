@@ -1,0 +1,77 @@
+.container {
+  --top-left-gradient-bg: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(138, 157, 255, 0.25) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+
+  --top-center-gradient-bg: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(117, 52, 255, 0.2) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+
+  --bottom-right-gradient-bg: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(138, 157, 255, 0.7) 10%,
+    rgba(255, 255, 255, 0) 100%
+  );
+
+  z-index: 1;
+  display: block;
+  overflow: hidden;
+}
+
+/* В макете еще меняются размеры и расположение градиентов, можно добавить в будущем */
+html[data-theme="dark"] .container {
+  --top-left-gradient-bg: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(108, 58, 215, 0.44) 0%,
+    rgba(30, 27, 186, 0) 100%
+  );
+
+  --top-center-gradient-bg: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(58, 83, 215, 0.62) 0%,
+    rgba(58, 83, 215, 0) 100%
+  );
+
+  --bottom-right-gradient-bg: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(58, 83, 215, 0.62) 0%,
+    rgba(58, 83, 215, 0) 100%
+  );
+}
+
+.container > * {
+  position: absolute;
+  filter: blur(150px);
+}
+
+.top-left-gradient {
+  width: 105vh;
+  height: 105vh;
+  left: 0;
+  top: 0;
+  transform: translate(-50%, -40%);
+  background: var(--top-left-gradient-bg);
+}
+
+/* TODO: в будущем должен копировать размеры плеера с демо видео */
+.top-center-gradient {
+  width: 45vh;
+  height: 45vh;
+  right: 0;
+  top: 0;
+  transform: translate(60%, -15%);
+  background: var(--top-center-gradient-bg);
+}
+
+.bottom-right-gradient {
+  width: 85vh;
+  height: 85vh;
+  right: 0;
+  bottom: 0;
+  transform: translate(75%, 55%);
+  background: var(--bottom-right-gradient-bg);
+}

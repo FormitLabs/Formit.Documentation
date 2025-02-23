@@ -1,9 +1,9 @@
 import SmallDotPattern from "/img/smallDotPattern.svg";
 import LargeDotPattern from "/img/largeDotPattern.svg";
-import styles from "./DotPatterns.module.css";
+import styles from "./DotPatternsBg.module.css";
 import React from "react";
 
-export default function DotPatterns() {
+export default function DotPatternsBg() {
   return (
     <div className={styles.container}>
       <SmallDotPattern className={styles["top-left-pattern"]} />
