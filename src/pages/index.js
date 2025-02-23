@@ -6,13 +6,12 @@ import Header from "../components/home/Header";
 import RadialGradientsBg from "../components/home/RadialGradientsBg";
 import DotPatternsBg from "../components/home/DotPatternsBg";
 
-// FIXME: вся стилизация документации сделана некорректно.
+// TODO: вся стилизация документации сделана некорректно.
 //  1) Вынести все захардкоженные цвета в `custom.css`
 //  2) Переехать на scss
 //  3) Обратиться к этой ссылке для грамотной работы с цветами и упрощения переопределяющих друг друга css стилей:
 //  https://docusaurus.io/docs/styling-layout
 
-// TODO: Все компоненты, нужные только для главной страницы, разделить от общих компонентов
 export default function Home() {
   // const { siteConfig } = useDocusaurusContext();
   return (
