@@ -44,11 +44,9 @@ const config = {
       navbar: {
         logo: {
           alt: "Formit",
-          src: "img/formit-text-black.svg",
-          srcDark: "img/formit-text-white.svg",
-          width: "90px",
-          height: "22px",
-          style: { marginLeft: "10px", color: "transparent" },
+          src: "img/formit-square-logo.svg",
+          width: "auto",
+          height: "auto",
         },
         items: [
           {
