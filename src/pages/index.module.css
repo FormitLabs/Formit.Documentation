@@ -1,7 +1,10 @@
-html[data-theme="dark"] .wrapper {
-  background: linear-gradient(180deg, #000000 1.36%, #3a53d7 182.04%);
+.wrapper {
   position: relative;
   overflow: hidden;
+}
+
+html[data-theme="dark"] .wrapper {
+  background: linear-gradient(180deg, #000000 1.36%, #3a53d7 182.04%);
 }
 
 .content {
