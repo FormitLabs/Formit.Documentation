@@ -2,7 +2,14 @@
 
 .footer {
   --ifm-footer-background-color: #222222;
-  padding-top: 65px;
+  padding: 60px 0 40px 0;
+}
+
+/** !important to override docusaurus styles*/
+.footer .container {
+  max-width: var(--content-max-width) !important;
+  padding: 0 var(--content-h-padding);
+  margin: 0 auto;
 }
 
 .footer-social-networks a {
@@ -148,10 +155,10 @@
     background-size: cover;
   }
 
-  .footer .container {
-    max-width: 780px;
-    margin: 0 auto;
-  }
+  /*.footer .container {*/
+  /* !* max-width: 780px;*!*/
+  /*  margin: 0 auto;*/
+  /*}*/
 }
 
 @media screen and (max-width: 550.9999px) {
