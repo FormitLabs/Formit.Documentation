@@ -111,8 +111,8 @@ const config = {
               },
               {
                 html: `
-                  <a class="mail-info" href="mailto:infoaltecsystems@altek.online">
-                    <u>infoaltecsystems@altek.online</u>
+                  <a class="mail-info" href="mailto:info@formit.pro">
+                    <u>info@formit.pro</u>
                   </a>`,
               },
             ],
