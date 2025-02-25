@@ -1,21 +1,19 @@
 .section {
+  z-index: 2;
   display: flex;
   justify-content: space-between;
   padding: 50px 0 75px 0;
 }
 
-@media screen and (max-width: 1024px) and (min-width: 551px) {
+@media screen and (max-width: 1340px) and (min-width: 551px) {
   .section {
     flex-direction: column;
-    max-width: 745px;
-    margin: 0 auto;
   }
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 550.9999px) {
   .section {
     flex-direction: column;
-    margin: auto;
     padding: 60px 0 85px 0;
   }
 }

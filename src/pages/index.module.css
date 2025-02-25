@@ -1,22 +1,20 @@
-.layout {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  max-width: 1320px;
-  margin: 0 auto;
+.wrapper {
+  position: relative;
   overflow: hidden;
 }
 
-@media screen and (max-width: 1024px) and (min-width: 551px) {
-  .layout {
-    align-items: center;
-    height: auto;
-  }
+html[data-theme="dark"] .wrapper {
+  background: linear-gradient(180deg, #000000 1.36%, #3a53d7 182.04%);
 }
 
-@media screen and (max-width: 550px) {
-  .layout {
-    align-items: center;
-    height: auto;
-  }
+.content {
+  position: relative;
+  flex: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 100%;
+  max-width: var(--content-max-width);
+  padding: 0 var(--content-h-padding);
+  margin: 0 auto;
 }

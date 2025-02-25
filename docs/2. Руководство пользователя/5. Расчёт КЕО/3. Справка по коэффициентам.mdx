@@ -4,6 +4,8 @@ slug: /manual/keo/coefficients-reference
 
 ***
 
+<!-- Данный файл ломается при форматировании через prettier. Проблема в `mdx` парсере, пока что не решена =( -->
+
 ## Коэффициент N
 N - Номер группы светового района N (Приложение Е, таблица Е.1 СП 52.13330.2016).
 
@@ -12,6 +14,7 @@ N - Номер группы светового района N (Приложен�
     <col style={{ width: '15%' }}/>
     <col style={{ width: '85%' }}/>
   </colgroup>
+  <tbody>
   <tr>
     <th>Номер группы административных районов N</th>
     <th>Административный район</th>
@@ -40,10 +43,11 @@ N - Номер группы светового района N (Приложен�
     <td>Астраханская, Амурская области, Карачаево-Черкесская Республика, Краснодарский край, Приморский край, Республика Адыгея, Республика Дагестан, Республика Калмыкия, Республика Крым, Ростовская область, г. Севастополь, Ставропольский край</td>
   </tr>
    <tr>
-    <td colspan="2"> Примечание - Административные районы Российский Федерации объединены в группы по ресурсам светового климата по критерию суммарного количества освещенности,
+    <td colSpan="2"> Примечание - Административные районы Российский Федерации объединены в группы по ресурсам светового климата по критерию суммарного количества освещенности,
 поступающей и помещение в течение года.
  </td>
   </tr>
+  </tbody>
 </table>
 
 ## Коэффициент MF
@@ -62,26 +66,27 @@ MF - коэффициент эксплуатации (таблица 4.3 СП 52
     <col style={{ width: '8%' }}/>
     <col style={{ width: '8%' }}/>
   </colgroup>
+  <tbody>
       <tr>
-    <th rowspan="4">Помещения и территории </th>
-    <th rowspan="4">Примеры помещений</th>
-    <th colspan="3"> Искусственное освещение </th>
-    <th colspan="4"> Естественное освещение </th>
+    <th rowSpan="4">Помещения и территории </th>
+    <th rowSpan="4">Примеры помещений</th>
+    <th colSpan="3"> Искусственное освещение </th>
+    <th colSpan="4"> Естественное освещение </th>
   </tr>
    <tr>
-    <td colspan="3"> Коэффициент эксплуатации ME 
-    <div style={{width:"100%", margin:"10px 0", border:"1px dashed rgb(218, 221, 225)"}}/>
+    <td colSpan="3"> Коэффициент эксплуатации ME
+    <dashedDivider/>
 Число чисток светильников в год
  </td>
-    <td colspan="4"> Коэффициент эксплуатации ME
-<div style={{width:"100%", margin:"10px 0", border:"1px dashed rgb(218, 221, 225)"}}/>
+    <td colSpan="4"> Коэффициент эксплуатации ME
+<dashedDivider/>
  
 Число чисток остекления светопроемов в год
  </td>
   </tr>
   <tr>
-    <td colspan="3"> Эксплуатационная группа светильников по приложению Д </td>
-    <td colspan="4"> Угол наклона светопропускающего материала к горизонту </td>
+    <td colSpan="3"> Эксплуатационная группа светильников по приложению Д </td>
+    <td colSpan="4"> Угол наклона светопропускающего материала к горизонту </td>
   </tr>
   <tr>
     <td>1-4</td>
@@ -93,82 +98,83 @@ MF - коэффициент эксплуатации (таблица 4.3 СП 52
     <td>76°-90°</td>
       </tr>
   <tr>
-    <td colspan="9"> 1. Производственные помещения с воздушной средой, содержащей в рабочей зоне:</td>
+    <td colSpan="9"><b>1. Производственные помещения с воздушной средой, содержащей в рабочей зоне:</b></td>
     </tr>
+      <tr>
     <td>а) св. 5 мг/ м3 пыли, дыма, копоти</td>
     <td>Агломерационные фабрики, цементные заводы и обрубные отделения литейных цехов
 </td>
 <td> 
 0,50 
-    <div style={{width:"100%", margin:"10px 0", border:"1px dashed rgb(218, 221, 225)"}}/>
+    <dashedDivider/>
 18
 </td>
 <td> 
 0,59 
-    <div style={{width:"100%", margin:"10px 0", border:"1px dashed rgb(218, 221, 225)"}}/>
+    <dashedDivider/>
 6
 </td>
 <td> 
 0,63 
-    <div style={{width:"100%", margin:"10px 0", border:"1px dashed rgb(218, 221, 225)"}}/>
+    <dashedDivider/>
 4
 </td>
 <td> 
 0,50 
-    <div style={{width:"100%", margin:"10px 0", border:"1px dashed rgb(218, 221, 225)"}}/>
+    <dashedDivider/>
 4
 </td>
 <td> 
 0,56 
-    <div style={{width:"100%", margin:"10px 0", border:"1px dashed rgb(218, 221, 225)"}}/>
+    <dashedDivider/>
 4
 </td>
 <td> 
 0,59 
-    <div style={{width:"100%", margin:"10px 0", border:"1px dashed rgb(218, 221, 225)"}}/>
+    <dashedDivider/>
 18
 </td>
 <td> 
 0,67 
-    <div style={{width:"100%", margin:"10px 0", border:"1px dashed rgb(218, 221, 225)"}}/>
+    <dashedDivider/>
 18
-</td>
+</td> </tr>
 <tr>
     <td> б) от 1 до 5 мг/ м3 пыли, дыма, копоти</td>
     <td>Агломерационные фабрики, цементные заводы и обрубные отделения литейных цехов</td>
     <td> 
 0,56 
-    <div style={{width:"100%", margin:"10px 0", border:"1px dashed rgb(218, 221, 225)"}}/>
+    <dashedDivider/>
 6
 </td>
 <td> 
 0,63 
-    <div style={{width:"100%", margin:"10px 0", border:"1px dashed rgb(218, 221, 225)"}}/>
+    <dashedDivider/>
 4
 </td>
 <td> 
 0,63 
-    <div style={{width:"100%", margin:"10px 0", border:"1px dashed rgb(218, 221, 225)"}}/>
+    <dashedDivider/>
 2
 </td>
 <td> 
 0,56 
-    <div style={{width:"100%", margin:"10px 0", border:"1px dashed rgb(218, 221, 225)"}}/>
+    <dashedDivider/>
 3
 </td>
 <td> 
 0,63 
-    <div style={{width:"100%", margin:"10px 0", border:"1px dashed rgb(218, 221, 225)"}}/>
+    <dashedDivider/>
 3
 </td>
 <td> 
 0,67 
-    <div style={{width:"100%", margin:"10px 0", border:"1px dashed rgb(218, 221, 225)"}}/>
+    <dashedDivider/>
 3
 </td>
 <td> 
 0,71 
-    <div style={{width:"100%", margin:"10px 0", border:"1px dashed rgb(218, 221, 225)"}}/>
+    <dashedDivider/>
 3
 </td>
 </tr>
@@ -177,37 +183,37 @@ MF - коэффициент эксплуатации (таблица 4.3 СП 52
     <td>Цехи инструментальные, сборочные, технические, механосборочные, пошивочные </td>
     <td> 
 0,67 
-    <div style={{width:"100%", margin:"10px 0", border:"1px dashed rgb(218, 221, 225)"}}/>
+    <dashedDivider/>
 4
 </td>
 <td> 
 0,71 
-    <div style={{width:"100%", margin:"10px 0", border:"1px dashed rgb(218, 221, 225)"}}/>
+    <dashedDivider/>
 2
 </td>
 <td> 
 0,71 
-    <div style={{width:"100%", margin:"10px 0", border:"1px dashed rgb(218, 221, 225)"}}/>
+    <dashedDivider/>
 1
 </td>
 <td> 
 0,63 
-    <div style={{width:"100%", margin:"10px 0", border:"1px dashed rgb(218, 221, 225)"}}/>
+    <dashedDivider/>
 2
 </td>
 <td> 
 0,67 
-    <div style={{width:"100%", margin:"10px 0", border:"1px dashed rgb(218, 221, 225)"}}/>
+    <dashedDivider/>
 2
 </td>
 <td> 
 0,71 
-    <div style={{width:"100%", margin:"10px 0", border:"1px dashed rgb(218, 221, 225)"}}/>
+    <dashedDivider/>
 2
 </td>
 <td> 
 0,77 
-    <div style={{width:"100%", margin:"10px 0", border:"1px dashed rgb(218, 221, 225)"}}/>
+    <dashedDivider/>
 2
 </td>
 </tr>
@@ -215,49 +221,49 @@ MF - коэффициент эксплуатации (таблица 4.3 СП 52
     <td> г) значительные концентрации паров, кислот, щелочей, газов, способных при соприкосновении с влагой образовывать слабые растворы кислот, щелочей, а также обладающих большой корродирующей способностью </td>
     <td> Цехи химических заводов по выработке кислот, щелочей, едких химических реактивов, ядохимикатов, удобрений, цехи гальванических покрытий и различных отраслей промышленности с применением электролиза </td>
     <td> 0,56 
-    <div style={{width:"100%", margin:"10px 0", border:"1px dashed rgb(218, 221, 225)"}}/>
+    <dashedDivider/>
 6
 </td>
 <td> 
 0,63 
-    <div style={{width:"100%", margin:"10px 0", border:"1px dashed rgb(218, 221, 225)"}}/>
+    <dashedDivider/>
 4
 </td>
 <td> 
 0,62
-    <div style={{width:"100%", margin:"10px 0", border:"1px dashed rgb(218, 221, 225)"}}/>
+    <dashedDivider/>
 2
 </td>
 <td> 
 0,50 
-    <div style={{width:"100%", margin:"10px 0", border:"1px dashed rgb(218, 221, 225)"}}/>
+    <dashedDivider/>
 3
 </td>
 <td> 
 0,56 
-    <div style={{width:"100%", margin:"10px 0", border:"1px dashed rgb(218, 221, 225)"}}/>
+    <dashedDivider/>
 3
 </td>
 <td> 
 0,59 
-    <div style={{width:"100%", margin:"10px 0", border:"1px dashed rgb(218, 221, 225)"}}/>
+    <dashedDivider/>
 3
 </td>
 <td> 
 0,67 
-    <div style={{width:"100%", margin:"10px 0", border:"1px dashed rgb(218, 221, 225)"}}/>
+    <dashedDivider/>
 3
 </td>
 </tr>
 <tr>
-    <td colspan="9"> 2. Производственные помещения с особым режимом по чистоте воздуха при обслуживании светильников:</td>
+    <td colSpan="9"><b>2. Производственные помещения с особым режимом по чистоте воздуха при обслуживании светильников:</b></td>
     </tr>
     <tr>
     <td> а) с технического этажа </td>
     <td> </td>
     <td> 
 0,77 
-    <div style={{width:"100%", margin:"10px 0", border:"1px dashed rgb(218, 221, 225)"}}/>
+    <dashedDivider/>
 4
 </td>
 <td> - </td>
@@ -272,7 +278,7 @@ MF - коэффициент эксплуатации (таблица 4.3 СП 52
     <td> </td>
     <td> 
 0,71 
-    <div style={{width:"100%", margin:"10px 0", border:"1px dashed rgb(218, 221, 225)"}}/>
+    <dashedDivider/>
 2
 </td>
 <td> - </td>
@@ -283,33 +289,33 @@ MF - коэффициент эксплуатации (таблица 4.3 СП 52
 <td> - </td>
 </tr>
 <tr>
-    <td colspan="9"> 3. Помещения общественных и жилых зданий:</td>
+    <td colSpan="9"><b>3. Помещения общественных и жилых зданий:</b></td>
     </tr> 
     <tr>
     <td> а) пыльные, жаркие и сырые </td>
     <td> Горячие цехи предприятий общественного питания, охлаждаемые камеры, помещения для приготовления растворов в прачечных, душевые и т.д. </td>
     <td> 
 0,59 
-    <div style={{width:"100%", margin:"10px 0", border:"1px dashed rgb(218, 221, 225)"}}/>
+    <dashedDivider/>
 2
 </td>
 <td> 0,63 
-    <div style={{width:"100%", margin:"10px 0", border:"1px dashed rgb(218, 221, 225)"}}/>
+    <dashedDivider/>
 2 </td>
 <td> 0,63 
-    <div style={{width:"100%", margin:"10px 0", border:"1px dashed rgb(218, 221, 225)"}}/>
+    <dashedDivider/>
 2</td>
 <td> 0,50 
-    <div style={{width:"100%", margin:"10px 0", border:"1px dashed rgb(218, 221, 225)"}}/>
+    <dashedDivider/>
 3</td>
 <td> 0,56 
-    <div style={{width:"100%", margin:"10px 0", border:"1px dashed rgb(218, 221, 225)"}}/>
+    <dashedDivider/>
 3</td>
 <td> 0,59 
-    <div style={{width:"100%", margin:"10px 0", border:"1px dashed rgb(218, 221, 225)"}}/>
+    <dashedDivider/>
 3 </td>
 <td> 0,63
-    <div style={{width:"100%", margin:"10px 0", border:"1px dashed rgb(218, 221, 225)"}}/>
+    <dashedDivider/>
 3</td>
 </tr>
 <tr>
@@ -318,30 +324,30 @@ MF - коэффициент эксплуатации (таблица 4.3 СП 52
  </td>
     <td> 
 0,71 
-    <div style={{width:"100%", margin:"10px 0", border:"1px dashed rgb(218, 221, 225)"}}/>
+    <dashedDivider/>
 2
 </td>
 <td> 0,71 
-    <div style={{width:"100%", margin:"10px 0", border:"1px dashed rgb(218, 221, 225)"}}/>
+    <dashedDivider/>
 1 </td>
 <td> 0,71
-    <div style={{width:"100%", margin:"10px 0", border:"1px dashed rgb(218, 221, 225)"}}/>
+    <dashedDivider/>
 1</td>
 <td> 0,67 
-    <div style={{width:"100%", margin:"10px 0", border:"1px dashed rgb(218, 221, 225)"}}/>
+    <dashedDivider/>
 2</td>
 <td> 0,71 
-    <div style={{width:"100%", margin:"10px 0", border:"1px dashed rgb(218, 221, 225)"}}/>
+    <dashedDivider/>
 2</td>
 <td> 0,77
-    <div style={{width:"100%", margin:"10px 0", border:"1px dashed rgb(218, 221, 225)"}}/>
+    <dashedDivider/>
 1 </td>
 <td> 0,83
-    <div style={{width:"100%", margin:"10px 0", border:"1px dashed rgb(218, 221, 225)"}}/>
+    <dashedDivider/>
 1</td>
 </tr>
 <tr>
-    <td colspan="9"> 4. Территории с воздушной средой, содержащей:</td>
+    <td colSpan="9"><b>4. Территории с воздушной средой, содержащей:</b></td>
     </tr>
     <tr>
     <td> а) большое количество пыли (более 1 мг/ м3 ) </td>
@@ -349,14 +355,14 @@ MF - коэффициент эксплуатации (таблица 4.3 СП 52
 ним улиц и дорог </td>
     <td> 
 0,67 
-    <div style={{width:"100%", margin:"10px 0", border:"1px dashed rgb(218, 221, 225)"}}/>
+    <dashedDivider/>
 4
 </td>
 <td> 0,67 
-    <div style={{width:"100%", margin:"10px 0", border:"1px dashed rgb(218, 221, 225)"}}/>
+    <dashedDivider/>
 4 </td>
 <td> 0,67
-    <div style={{width:"100%", margin:"10px 0", border:"1px dashed rgb(218, 221, 225)"}}/>
+    <dashedDivider/>
 4</td>
 <td> - </td>
 <td> - </td>
@@ -368,14 +374,14 @@ MF - коэффициент эксплуатации (таблица 4.3 СП 52
     <td> Территории промышленных предприятий, кроме указанных в перечислении а) и общественных зданий </td>
     <td> 
 0,67 
-    <div style={{width:"100%", margin:"10px 0", border:"1px dashed rgb(218, 221, 225)"}}/>
+    <dashedDivider/>
 2
 </td>
 <td> 0,67 
-    <div style={{width:"100%", margin:"10px 0", border:"1px dashed rgb(218, 221, 225)"}}/>
+    <dashedDivider/>
 2 </td>
 <td> 0,67
-    <div style={{width:"100%", margin:"10px 0", border:"1px dashed rgb(218, 221, 225)"}}/>
+    <dashedDivider/>
 2</td>
 <td> - </td>
 <td> - </td>
@@ -383,30 +389,30 @@ MF - коэффициент эксплуатации (таблица 4.3 СП 52
 <td> - </td>
 </tr>
 <tr>
-    <td colspan="9"> 5. Населенные пункты:</td>
+    <td colSpan="9"><b>5. Населенные пункты:</b></td>
     </tr> 
     <tr>
     <td>  </td>
     <td> Улицы, площади, дороги, территории жилых районов, парки, бульвары, пешеходные тоннели, фасады зданий, памятники транспортные тоннели </td>
     <td> 
 0,63 
-    <div style={{width:"100%", margin:"10px 0", border:"1px dashed rgb(218, 221, 225)"}}/>
+    <dashedDivider/>
 2 <br/>
 <br/>
 <br/>
 -
 </td>
 <td> 0,67 
-    <div style={{width:"100%", margin:"10px 0", border:"1px dashed rgb(218, 221, 225)"}}/>
+    <dashedDivider/>
 2 <br/> 
 0,59 
-    <div style={{width:"100%", margin:"10px 0", border:"1px dashed rgb(218, 221, 225)"}}/>
+    <dashedDivider/>
 2</td>
 <td> 0,67
-    <div style={{width:"100%", margin:"10px 0", border:"1px dashed rgb(218, 221, 225)"}}/>
+    <dashedDivider/>
 1 <br/>
 0,59 
-    <div style={{width:"100%", margin:"10px 0", border:"1px dashed rgb(218, 221, 225)"}}/>
+    <dashedDivider/>
 2</td>
 <td> - </td>
 <td> - </td>
@@ -414,7 +420,7 @@ MF - коэффициент эксплуатации (таблица 4.3 СП 52
 <td> - </td>
 </tr>
      <tr>
-    <td colspan="9">  П р и м е ч а н и я<br/>
+    <td colSpan="9">П р и м е ч а н и я<br/>
     <ol>                                                                                                                                                                         
     <li> Значения коэффициента эксплуатации, указанные в графе "Естественное освещение", следует умножать: на 0,91 - при применении узорчатого стекла, стеклопластика, армированной пленки и матированного стекла, а также при использовании световых проемов для аэрации; на 1,11 - при применении органического стекла</li>
     <li>Значения коэффициентов эксплуатации, указанные в графе "1-4", следует увеличивать при односменной работе по перечислениям б) и г) пункта 1 - на 0,2; по перечислению в) пункта 1 - на 0,1; при двухсменной работе по перечислениям б) и г) пункта 1 - на 0,15.</li>
@@ -423,8 +429,9 @@ MF - коэффициент эксплуатации (таблица 4.3 СП 52
     <li>Допускается использовать расчетный коэффициент эксплуатации.</li>
     </ol>
  </td>
-  </tr>   
- </table>
+  </tr>
+  </tbody>
+</table>
 
 
 ## Коэффициент ρ<sub>ср</sub>
@@ -440,6 +447,7 @@ MF - коэффициент эксплуатации (таблица 4.3 СП 52
     <col style={{ width: '30%' }}/>
     <col style={{ width: '30%' }}/>
   </colgroup>
+  <tbody>
   <tr>
     <th>Материал</th>
     <th>Коэффициент отражения материала ρ</th>
@@ -482,6 +490,7 @@ MF - коэффициент эксплуатации (таблица 4.3 СП 52
     <td>0,20</td>
     <td>0,20</td>
   </tr>
+  </tbody>
 </table>
 
 ## Коэффициент τ<sub>1</sub>
@@ -494,6 +503,7 @@ MF - коэффициент эксплуатации (таблица 4.3 СП 52
     <col style={{ width: '60%' }}/>
     <col style={{ width: '40%' }}/>
   </colgroup>
+  <tbody>
   <tr>
     <th>Формула остекления</th>
     <th>τ<sub>1</sub>, отн. ед.</th>
@@ -583,7 +593,7 @@ MF - коэффициент эксплуатации (таблица 4.3 СП 52
     <td>0,36–0,64</td>
   </tr>
   <tr>
-    <td colspan="2">  П р и м е ч а н и я<br/>
+    <td colSpan="2">  П р и м е ч а н и я<br/>
     <ol>
     <li>Формулы стеклопакетов – в соответствии с ГОСТ 24866.</li>
     <li>СИ – солнцезащитное и низкоэмисионное И-стекло. СК – солнцезащитное и низкоэмисионное К-стекло.</li>
@@ -592,6 +602,7 @@ MF - коэффициент эксплуатации (таблица 4.3 СП 52
     </ol>
  </td>
   </tr>
+  </tbody>
 </table>
 
 
@@ -604,6 +615,7 @@ MF - коэффициент эксплуатации (таблица 4.3 СП 52
     <col style={{ width: '70%' }}/>
     <col style={{ width: '30%' }}/>
   </colgroup>
+  <tbody>
   <tr>
     <th>Материал</th>
     <th>Коэффициент отражения материала ρ</th>
@@ -644,6 +656,7 @@ MF - коэффициент эксплуатации (таблица 4.3 СП 52
     <td>Дуб светлый</td>
     <td>0,33</td>
   </tr>
+  </tbody>
 </table>
 
 ## Коэффициенты τ<sub>3</sub> и τ<sub>4</sub>
@@ -657,6 +670,7 @@ MF - коэффициент эксплуатации (таблица 4.3 СП 52
     <col style={{ width: '30%' }}/>
     <col style={{ width: '25%' }}/>
   </colgroup>
+  <tbody>
   <tr>
     <th>Несущие конструкции покрытий</th>
     <th>Коэффициент, учитывающий потери света в несущих конструкциях,τ<sub>3</sub></th>
@@ -670,8 +684,8 @@ MF - коэффициент эксплуатации (таблица 4.3 СП 52
     <td>1,0</td>
   </tr>
   <tr>
-    <td rowspan="3">Железобетонные и деревянные фермы и арки </td>
-    <td rowspan="3">0,8</td>
+    <td rowSpan="3">Железобетонные и деревянные фермы и арки </td>
+    <td rowSpan="3">0,8</td>
     <td>Стационарные жалюзи и экраны с защитным углом не более 45° при расположении пластин жалюзи	или	экранов под	углом	90°	к плоскости окна:</td>
     <td>  </td>
   </tr>
@@ -683,6 +697,7 @@ MF - коэффициент эксплуатации (таблица 4.3 СП 52
     <td> - вертикальные </td>
     <td> 0,75 </td>
   </tr>
+  </tbody>
  </table>
 
 

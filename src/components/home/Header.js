@@ -1,14 +1,14 @@
+import styles from "./Header.module.css";
 import React from "react";
 import Link from "@docusaurus/Link";
-import styles from "./HomepageHeader.module.css";
 
-export default function HomepageHeader() {
+export default function Header() {
   return (
     <header className={styles.header}>
       <h1 className={styles["header-text"]}>
         Библиотека знаний
         <br />
-        <span className="selected-text">Formit</span>
+        <span className={styles.highlight}>Formit</span>
       </h1>
       <Link className={styles["button-for-resources"]} to="/docs/">
         <span>Перейти к ресурсам</span>

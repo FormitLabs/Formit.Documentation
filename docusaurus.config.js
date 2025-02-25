@@ -13,6 +13,11 @@ const config = {
   organizationName: "formit",
   projectName: "amaterasu.documentation",
 
+  i18n: {
+    defaultLocale: "ru",
+    locales: ["ru"],
+  },
+
   presets: [
     [
       "@docusaurus/preset-classic",
@@ -26,6 +31,7 @@ const config = {
           customCss: [
             require.resolve("./src/css/customFooter.css"),
             require.resolve("./src/css/customNavbar.css"),
+            require.resolve("./src/css/customSidebar.css"),
             require.resolve("./src/css/custom.css"),
           ],
         },
@@ -39,11 +45,9 @@ const config = {
       navbar: {
         logo: {
           alt: "Formit",
-          src: "img/formit-text-black.svg",
-          srcDark: "img/formit-text-white.svg",
-          width: "90px",
-          height: "22px",
-          style: { marginLeft: "10px", color: "transparent" },
+          src: "img/formit-square-logo.svg",
+          width: "auto",
+          height: "auto",
         },
         items: [
           {
