@@ -12,13 +12,15 @@
 
   --altec-primary: #3a53d7;
   --navbar-background: var(--ifm-background-surface-color);
+
+  --content-h-padding: var(--ifm-spacing-horizontal);
+  --content-max-width: 1320px;
 }
 
 html[data-theme="dark"] {
   --ifm-font-color-base: #fff;
   --ifm-background-color: #19191c;
   --ifm-background-surface-color: #222222;
-  --ifm-menu-color-background-active: var(--ifm-color-primary);
 
   --altec-primary: #8697ea;
   --navbar-background: linear-gradient(
@@ -28,6 +30,20 @@ html[data-theme="dark"] {
   );
 }
 
+@media screen and (max-width: 1340px) and (min-width: 551px) {
+  :root {
+    --content-max-width: 745px;
+  }
+}
+
+@media screen and (max-width: 550.9999px) {
+  :root {
+    --content-max-width: 100%;
+  }
+}
+
 .selected-text {
   color: var(--altec-primary);
 }
+
+
