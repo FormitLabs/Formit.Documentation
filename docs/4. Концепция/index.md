@@ -22,6 +22,7 @@ import rtyImage from "./resources/rty.png";
 import formImage from "./resources/form.png";
 import exprtImage from "./resources/exprt.png";
 
+***
 
 ## Установка плагина
 
