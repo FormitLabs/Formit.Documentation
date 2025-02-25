@@ -31,6 +31,7 @@ const config = {
           customCss: [
             require.resolve("./src/css/customFooter.css"),
             require.resolve("./src/css/customNavbar.css"),
+            require.resolve("./src/css/customSidebar.css"),
             require.resolve("./src/css/custom.css"),
           ],
         },
