@@ -3,8 +3,8 @@
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "Formit Docs",
-  tagline: "Formit",
+  title: "AltecInsolations Docs",
+  tagline: "AltecInsolations",
   url: "https://docs.formit.pro/",
   baseUrl: "/",
   onBrokenLinks: "throw",
