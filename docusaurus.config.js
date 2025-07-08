@@ -102,7 +102,7 @@ const config = {
               {
                 html: `
                   <a href="/">
-                    <img src="/img/formit-text-white.svg" alt="Логотип компании Formit" height="40px" width="auto" >
+                    <img src="/img/oldLogo.svg" alt="Логотип" height="40px" width="auto" >
                   </a>
                 `,
               },
