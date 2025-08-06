@@ -45,7 +45,7 @@ const config = {
       navbar: {
         logo: {
           alt: "Formit",
-          src: "img/formit-square-logo.svg",
+          src: "img/companyLogo.svg",
           width: "auto",
           height: "auto",
         },
@@ -102,7 +102,7 @@ const config = {
               {
                 html: `
                   <a href="/">
-                    <img src="/img/formit-text-white.svg" alt="Логотип компании Formit" height="40px" width="auto" >
+                    <img src="/img/companyLogoLarge.svg" alt="Логотип компании Formit" height="40px" width="auto" >
                   </a>
                 `,
               },
