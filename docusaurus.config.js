@@ -3,8 +3,8 @@
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "AltecInsolations Docs",
-  tagline: "AltecInsolations",
+  title: "Formit Docs",
+  tagline: "Formit",
   url: "https://docs.formit.pro/",
   baseUrl: "/",
   onBrokenLinks: "throw",
@@ -45,7 +45,7 @@ const config = {
       navbar: {
         logo: {
           alt: "Formit",
-          src: "img/formit-square-logo.svg",
+          src: "img/companyLogo.svg",
           width: "auto",
           height: "auto",
         },
@@ -102,7 +102,7 @@ const config = {
               {
                 html: `
                   <a href="/">
-                    <img src="/img/oldLogo.svg" alt="Логотип" height="40px" width="auto" >
+                    <img src="/img/companyLogoLarge.svg" alt="Логотип компании Formit" height="40px" width="auto" >
                   </a>
                 `,
               },
