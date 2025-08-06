@@ -15,7 +15,7 @@ export default function Communities() {
   return (
     <div className={styles.communities}>
       <CommunityCard Icon={TgIcon}>
-        Мы активно развиваем сообщество <b>AltecInsolations</b> в&nbsp;
+        Мы активно развиваем сообщество <b>Formit</b> в&nbsp;
         <a
           href="https://t.me/altecformit"
           target="_blank"
