@@ -8,7 +8,7 @@ export default function Header() {
       <h1 className={styles["header-text"]}>
         Библиотека знаний
         <br />
-        <span className={styles.highlight}>AltecInsolations</span>
+        <span className={styles.highlight}>Formit</span>
       </h1>
       <Link className={styles["button-for-resources"]} to="/docs/">
         <span>Перейти к ресурсам</span>
