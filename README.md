@@ -1,4 +1,4 @@
-# Amaterasu.Documentation
+# Formit.Documentation
 
 Библиотека знаний сервиса `Formit` (ранее `AltecInsolations`), созданная на базе [Docusaurus](https://docusaurus.io/).
 
