@@ -1,6 +1,8 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
+import autoNumberedImages  from "./src/remark/auto-numbered-images";
+
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "Formit Docs",
@@ -26,6 +28,7 @@ const config = {
         docs: {
           exclude: ["**/_*", "**/_*/**"],
           sidebarPath: require.resolve("./sidebars.js"),
+          remarkPlugins : [autoNumberedImages],
         },
         theme: {
           customCss: [
