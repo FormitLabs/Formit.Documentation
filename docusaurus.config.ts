@@ -1,5 +1,4 @@
-// @ts-check
-// Note: type annotations allow type checking and IDEs autocompletion
+import autoNumberedImages from "./src/remark/autoNumberedImages";
 
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
