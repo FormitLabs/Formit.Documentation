@@ -1,10 +1,11 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-import autoNumberedImages  from "./src/remark/auto-numbered-images";
+import type {Config} from '@docusaurus/types';
+import type * as Preset from '@docusaurus/preset-classic';
+import {releasesValidationConfig} from "./config/releasesValidation.config";
 
-/** @type {import('@docusaurus/types').Config} */
-const config = {
+const config : Config = {
   title: "Formit Docs",
   tagline: "Formit",
   url: "https://docs.formit.pro/",
@@ -21,10 +22,8 @@ const config = {
   },
 
   presets: [
-    [
-      "@docusaurus/preset-classic",
-      /** @type {import('@docusaurus/preset-classic').Options} */
-      ({
+    [ "@docusaurus/preset-classic",
+      {
         docs: {
           exclude: ["**/_*", "**/_*/**"],
           sidebarPath: require.resolve("./sidebars.js"),
@@ -38,13 +37,12 @@ const config = {
             require.resolve("./src/css/custom.css"),
           ],
         },
-      }),
+      } satisfies Preset.Options,
     ],
   ],
 
   themeConfig:
-    /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
-    ({
+    {
       navbar: {
         logo: {
           alt: "Formit",
@@ -191,7 +189,7 @@ const config = {
           },
         ],
       },
-    }),
+    },
 };
 
-module.exports = config;
+export default config;
