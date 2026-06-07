@@ -1,4 +1,5 @@
 import autoNumberedImages from "./src/remark/autoNumberedImages";
+import releasesValidation  from "./src/remark/releasesValidation";
 
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
@@ -26,7 +27,7 @@ const config : Config = {
         docs: {
           exclude: ["**/_*", "**/_*/**"],
           sidebarPath: require.resolve("./sidebars.js"),
-          remarkPlugins : [autoNumberedImages],
+          remarkPlugins : [autoNumberedImages, [releasesValidation, releasesValidationConfig]],
         },
         theme: {
           customCss: [
