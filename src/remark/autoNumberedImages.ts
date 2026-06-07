@@ -8,11 +8,11 @@ import {MdxJsxAttribute} from "mdast-util-mdx";
 const imageProps = new Set<string>(["width", "height", "image", "title", "id"]);
 const requiredImageProps = new Set<string>(["image", "title", "id"]);
 
-
 const plugin = () => {
 
     const transformer = async (ast: Root, file: VFile) => {
         // TODO: если потребуется, можно добавить индексацию видео вложений и т.д.
+        // TODO: добавить <Video/>, <VideoLink/> и все по аналогии, но со своей индексацией. !!!
         const indexByType = {"image": 1};
 
         const imageInfoById: Record<string, { title: MdxJsxAttribute["value"], index: number }> = {};
