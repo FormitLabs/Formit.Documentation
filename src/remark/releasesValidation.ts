@@ -51,6 +51,8 @@ const validateH2 = (ast: Root, file: VFile, options: ReleasesValidationOptions):
     let allH2Count = 0;
     let previousH2: string | null = null;
 
+    // TODO: добавить валидацию того, какой релиз является `latest` и форсить изменения `slug`
+
     visit(ast, n => isHeading(n) && n.depth === 2, (n) => {
         const node = n as Heading;
         const content = node.children;
