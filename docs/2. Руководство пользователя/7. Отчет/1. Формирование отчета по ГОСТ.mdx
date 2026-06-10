@@ -1,0 +1,163 @@
+---
+slug: /manual/reports/generation-normative
+---
+
+import nachaloImage from "@site/docs/resources/otchet/nachalo.png";
+import titulgostImage from "@site/docs/resources/otchet/titulgost.png";
+import button2Image from "@site/docs/resources/otchet/button2.png";
+import otchgostImage from "@site/docs/resources/otchet/otchgost.png";
+import step2gostImage from "@site/docs/resources/otchet/step2gost.png";  
+import vvedeniegostImage from "@site/docs/resources/otchet/vvedeniegost.png"; 
+import vvedenie2gostImage from "@site/docs/resources/otchet/vvedenie2gost.png";
+import insolgostImage from "@site/docs/resources/otchet/insolgost.png";
+import plgostImage from "@site/docs/resources/otchet/plgost.png";
+import keogostImage from "@site/docs/resources/otchet/keogost.png";
+import zaklgostImage from "@site/docs/resources/otchet/zaklgost.png";
+import zaklgost2Image from "@site/docs/resources/otchet/zaklgost2.png";
+import grafplgostImage from "@site/docs/resources/otchet/grafplgost.gif";
+import plangostImage from "@site/docs/resources/otchet/plangost.png";
+import tablplgostImage from "@site/docs/resources/otchet/tablplgost.png";
+import step77Image from "@site/docs/resources/otchet/step77.png";
+import tablsitImage from "@site/docs/resources/otchet/tablsit.png";
+import sitplanImage from "@site/docs/resources/otchet/grpl.png";
+import step7Image from "@site/docs/resources/otchet/step7.gif";
+import step6Image from "@site/docs/resources/otchet/step6.png";
+import insolotchImage from "@site/docs/resources/otchet/insolotch.png";
+import keootchImage from "@site/docs/resources/otchet/keootch.png";
+import keo1Image from "@site/docs/resources/otchet/keo1.png";
+import keo2Image from "@site/docs/resources/otchet/keo2.png";
+import ploshnewImage from "@site/docs/resources/otchet/ploshnew.png";
+import gost25Image from "@site/docs/resources/otchet/gost25.png";
+
+***
+
+В верхней части над сценой есть кнопка, позволяющая создать отчёт. Нажимаем *"Сформировать отчет"* (<ImageLink to="open-reports-modal"/>). Появляется окно *“Формирование отчёта”*.
+Результаты расчета можно сформировать в общий отчет, а также вывести раздельно. 
+
+<Image image={button2Image} id="open-reports-modal" title='Кнопка "Сформировать отчет"'/>
+
+К формированию, соответственно, доступны только опции, просчитанные вами в сервисе (<ImageLink to="selected-options"/>).
+
+Сформируем общий отчет.
+
+Выбираем пункты *“Инсоляция зданий”*, *"Расчет КЕО"* и *"Инсоляция площадок"*.
+
+<Image image={otchgostImage} id="selected-options" title="Выбор опций"/>
+
+Вы можете выбрать отчет в двух вариантах: *"Отчет по старому форму"* и *"Отчет по ГОСТу"*
+Выбираем *"Создать отчет по ГОСТ"*. (<ImageLink to="normative-report"/>).
+
+<Image image={nachaloImage} id="normative-report" title='Кнопка "Создать отчет по ГОСТ"'/>
+
+### 1. *Титульная страница*
+
+**Заголовок, штамп.**
+
+Заполняем строку *“Заголовок отчета”*.
+Вводим данные штампа. Есть возможность его редактирования путем добавления и удаления строк. Нажимаем *“Продолжить”* (<ImageLink to="title-step"/>).
+
+<Image image={titulgostImage} id="title-step" title='Блок "Титульная страница"'/>
+<Image image={gost25Image} id="title-step-preview" width="80%" title="Превью титульной страницы"/>
+
+В *"Настройках отображения"* вы можете отключить галочку напротив *"Отображать титульную страницу, рамки и инженерный штамп"*. Тогда отчет будет выгружен с пустым листом. 
+
+Результаты инсоляции будут выводиться по солнечному времени.
+
+### 2. *Введение*
+
+**Методика расчета, исходные данные.**
+
+Заполняем поле *“Введение”*. Текст можно сохранить как шаблон и использовать в последующих версиях отчета для текущей модели (<ImageLink to="introduction-step"/>).
+
+Далее описана методика расчета (<ImageLink to="introduction-preview"/>, <ImageLink to="introduction-preview-continuation"/>). Информация об исходных данных генерируется автоматически, изменить её можно в командном меню в разделе *“Настройки”*. Обновление настроек повлечет изменение результатов инсоляции в отчёте.
+
+<Image image={step2gostImage} id="introduction-step" title='Блок "Введение"'/>
+<Image image={vvedeniegostImage} id="introduction-preview" width="60%" title="Превью введения"/>
+<Image image={vvedenie2gostImage} id="introduction-preview-continuation" width="70%" title="Продолжение превью введения"/>
+
+### 3. *Расчёт инсоляции*
+
+**Типы помещения.**
+
+На этом этапе вы выбираете необходимые для отчета помещения с помощью фильтра и можете настроить отображение (<ImageLink to="insolation-step"/>).
+
+<Image image={insolgostImage} id="insolation-step" width="80%" title='Блок "Расчет инсоляции"'/>
+<Image image={insolotchImage} id="insolation-preview" title="Превью расчета инсоляции"/>
+
+### 4. *Инсоляция площадок*
+
+**Выбор площадок.**
+
+Выбираем площадки, результаты расчета которых нам интересны для выведения в отчет (<ImageLink to="territories-step"/>).
+
+<Image image={plgostImage} id="territories-step" width="90%" title='Блок "Инсоляция площадок"'/>
+<Image image={ploshnewImage} id="territories-preview" width="80%" title="Превью инсоляции площадок"/>
+
+### 5. *Расчет КЕО*
+
+**Расчетные этажи.**
+
+На этом шаге нужно посекционно выбрать типы помещений, которые войдут в отчёт (<ImageLink to="keo-step"/>).
+
+<Image image={keogostImage} id="keo-step" width="90%" title='Блок "Расчет КЕО"'/>
+
+---
+
+<Image image={keootchImage} id="keo-preview" width="70%" title="Превью расчета КЕО"/>
+<Image image={keo1Image} id="keo-preview-2" width="70%"  title="Продолжение превью расчета КЕО"/>
+<Image image={keo2Image} id="keo-preview-3" width="70%" title="Продолжение превью расчета КЕО"/>
+
+### 6. *Заключение*
+
+**Вывод о результатах.**
+
+Заполняем поле *“Заключение”* (<ImageLink to="conclusion-step"/>). Текст можно сохранить как шаблон и использовать в последующих версиях отчета для текущей модели.
+
+<Image image={zaklgostImage} id="conclusion-step" width="80%" title='Блок "Заключение"'/>
+<Image image={zaklgost2Image} id="conclusion-preview" width="70%" title="Превью заключения"/>
+
+### 7. *Графические планы*
+
+Нажимаем кнопку *Добавить*.
+
+В автоматически сформированном списке объектов из файла RVT выбираем здание. Далее выбираем этаж, либо группу этажей, для которых необходимо сгенерировать сечение. 
+
+Нажимаем зеленую галочку для сохранения (<ImageLink to="graphic-plans-step"/>).
+
+<Image image={grafplgostImage} id="graphic-plans-step" title="Создание графического плана"/>
+<Image image={plangostImage} id="graphic-plans-preview" title="Превью графического плана"/>
+<Image image={tablplgostImage} id="graphic-plans-table-preview" width="60%" title="Превью сводной таблицы графического плана"/>
+
+Сформированные планы будут отображаться списком.
+
+Вверху списка приложений - кнопка "Добавить".
+
+С её помощью, при необходимости, можно выбрать другие здания из сборки и подгружать относящиеся к нему сечения, по тому же алгоритму.
+
+### 8. *Ситуационные планы*
+
+На данном шаге у пользователя есть возможность сгенерировать графический план сцены, который представляет собой сборку всех зданий на сцене и отображение лучей с информацией о продолжительности инсоляции выбранной расчетной точки. Для этого нужно нажать кнопку "+ Добавить" (<ImageLink to="add-plan"/>)
+
+<Image image={step7Image} id="add-plan" title='Кнопка "Добавить план"'/>
+
+Возможности данного блока (<ImageLink to="plans-setup"/>):
+
+- Настройка позиционирования камеры на здании или на центре сцены при создании листа;
+- Выбор необходимого масштаба и формата листа;
+- Автоматическое формирование таблицы, содержащей в себе информацию о продолжительности инсоляции расчетных точек.
+
+<Image image={step77Image} id="plans-setup" title="Настройка ситуационного плана"/>
+<Image image={tablsitImage} id="plans-table-preview" width="60%" title="Превью таблицы"/>
+<Image image={sitplanImage} id="plans-preview" title="Превью ситуационного плана"/>
+
+### 9. *Формирование отчета*
+
+Конфигурация вашего отчёта готова! Нажимаем *"Сформировать отчет"* (<ImageLink to="create-report"/>).
+
+<Image image={step6Image} id="create-report" title="Формирование отчета"/>
+
+Отчет можно сохранить в PDF. Файл будет скачан, без дальнейшей возможности редактирования.
+
+
+
+
