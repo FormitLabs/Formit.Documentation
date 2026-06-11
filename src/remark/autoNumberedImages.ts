@@ -11,6 +11,10 @@ const requiredImageProps = new Set<string>(["image", "title", "id"]);
 const plugin = () => {
 
     const transformer = async (ast: Root, file: VFile) => {
+        // TODO: выводить логи в зависимости от .env
+        console.info("auto-numbering processing: ", file.path);
+
+
         // TODO: если потребуется, можно добавить индексацию видео вложений и т.д.
         // TODO: добавить <Video/>, <VideoLink/> и все по аналогии, но со своей индексацией. !!!
         const indexByType = {"image": 1};
@@ -25,12 +29,7 @@ const plugin = () => {
             const requiredPropsToCheck = new Set(requiredImageProps);
             for (const attr of attributes) {
                 if (!imageProps.has(attr.name)) {
-                    console.warn(newPluginError(file, node.position?.start, `Неизвестный параметр Image "${attr.name}"`).message);
-                }
-
-
-                if (attr.name === "title" && typeof attr.value === "string" && attr.value.includes("Рисунок")) {
-                    console.warn(newPluginError(file, node.position?.start, `БЛЯЯЯ РИССС "${attr.name}"`).message);
+                    throw newPluginError(file, node.position?.start, `Неизвестный параметр Image "${attr.name}"`);
                 }
 
                 // Specific validation for "id"
@@ -45,7 +44,7 @@ const plugin = () => {
 
             if (requiredPropsToCheck.size > 0) {
                 const formattedProps = [...requiredPropsToCheck.values()].map(v => `"${v}"`).join(", ");
-                throw newPluginError(file, node.position?.start, `Отсутствуют или некорректно заданы обязательные параметры Image: ${formattedProps}`).message;
+                throw newPluginError(file, node.position?.start, `Отсутствуют или некорректно заданы обязательные параметры Image: ${formattedProps}`);
             }
 
 
@@ -96,7 +95,7 @@ const plugin = () => {
             // Turn ImageLink into `a` with correct parameters
             node.name = "a";
             node.attributes = [newJsxProp("href", `#${imageId}`)];
-            node.children = [{type: "text", value: `рис. ${imageInfo.index}`}];
+            node.children = [{type: "text", value: `рис. ${imageInfo.index}`}];
         });
     };
     return transformer;
