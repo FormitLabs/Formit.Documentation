@@ -1,0 +1,61 @@
+---
+slug: /manual/insolation/results
+---
+
+import dlinaImage from "@site/docs/resources/lk/dlina.png";
+import rgyImage from "@site/docs/resources/rgy.png";
+import pppImage from "@site/docs/resources/frame/ppp.png";
+import rezImage from "@site/docs/resources/frame/rez.png";
+import ilImage from "@site/docs/resources/frame/il.png";
+import kkImage from "@site/docs/resources/frame/kk.png";
+import zzImage from "@site/docs/resources/frame/zz.png";
+import ssImage from "@site/docs/resources/frame/ss.png";
+import filImage from "@site/docs/resources/frame/fil.gif";
+
+***
+
+### Вкладка "Результаты инсоляции"
+
+Во вкладке *“Инсоляция”*, переходим в раздел *Результаты* (<ImageLink to="insolation-result"/>).
+
+<Image image={pppImage} id="insolation-result" width="40%" title="Вкладка инсоляция. Подраздел результаты"/>
+
+На панели мы видим здание/список зданий, напротив указывается тип жилое/общественное. Под каждым зданием многоуровневые списки. Разворачиваем вложенность. Напротив названия помещения отображаются периоды инсоляции и продолжительность (<ImageLink to="calculated-insolation-result"/>). В нижней части экрана - инсоляционная линейка, на которой эта информация выведена графически (<ImageLink to="insolation-graph"/>).
+
+<Image image={rezImage} id="calculated-insolation-result" width="40%" title="Результаты инсоляции"/>
+
+<Image image={ilImage} id="insolation-graph" title="Инсоляционный график"/>
+
+Объекты подсвечиваются по категориям:
+
+- **Зелёный цвет** - прошедшие инсоляцию. Нормативные требования инсоляции выполняются. 
+- **Желтый цвет** - частично не прошли инсоляцию. Это говорит о том, что нормативные требования инсоляции выполнены, но либо не все помещения пошли инсоляцию, либо прохождение обусловлено суммированием периодов для нескольких помещений. 
+- **Красный цвет** - не прошедшие инсоляцию объекты (<ImageLink to="insolation-types"/>). 
+
+<Image image={rgyImage} id="insolation-types" width="40%" title="Категории инсолирования"/>
+
+При необходимости можно воспользоваться фильтром результатов по соответствующим категориям (<ImageLink to="insolation-filter"/>).
+
+<Image image={filImage} id="insolation-filter" width="40%" title="Фильтр категорий инсолирования"/>
+
+Графическое отображение лучей в сцене мы можем получить одинарным кликом по интересующему объекту ЛКМ в меню результатов, либо селектом 
+определённого светопроема в самой сцене, также одинарным нажатием ЛКМ.
+
+Мы увидим опорные и расчетную (желтая) точки для каждого светопроема, а также инсоляционные лучи (зеленые) (<ImageLink to="insolation-rays"/>).
+
+<Image image={zzImage} id="insolation-rays" title="Отображение инсоляции в сцене с построением и расчётной точкой"/>
+
+Над деревом результатов расположена панель опций (<ImageLink to="options"/>). При необходимости можно изменить длину луча перетаскиванием кружочка, либо изменением числового значения.
+
+<Image image={dlinaImage} id="options" width="80%" title="Панель опций"/>
+
+Переключение тогда в функции *“Показывать все лучи”* активирует красные лучи. Таким образом мы видим промежутки инсоляции и затенения в течение всего инсоляционного периода. 
+Это позволяет наглядно продемонстрировать условия затенения (<ImageLink to="enable-red-rays"/>). 
+
+<Image image={kkImage} id="enable-red-rays" title="Отображение инсоляции в сцене с красными и зелеными лучами"/>
+
+Переключением следующего тоггла мы можем активировать текстовые метки выделенной в сцене квартиры.
+
+Если нажать на здание в сцене, подсветятся все рассчитанные окна, в соответствии с их статусом прохождения инсоляции. Зелёным будут выделяться те, что проходят, красным - нет (<ImageLink to="highlight-windows"/>).
+
+<Image image={ssImage} id="highlight-windows" title="Отображение статуса инсолирования всех рассчитанных окон"/>
