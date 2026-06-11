@@ -1,10 +1,5 @@
-// Import the original mapper
-import MDXComponents from '@theme-original/MDXComponents';
-import Image from '@site/src/components/Image';
-import DashedDivider from "../components/DashedDivider";
+import MDXComponents from "@theme-original/MDXComponents";
+import Image from "@site/src/components/Image";
+import DashedDivider from "@site/src/components/DashedDivider";
 
-export default {
-  ...MDXComponents,
-  image: Image,
-  dashedDivider: DashedDivider,
-};
+export default {...MDXComponents, Image, DashedDivider};
