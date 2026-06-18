@@ -8,6 +8,9 @@ const acceptableH2: ReleasesValidationOptions["acceptableH2"] = [
 ];
 
 const acceptableH3 = [
+    // Идет в начале, потому что новый продукт, который хотим разрекламировать
+    "Инсоляционная горка",
+
     // Буквально экспортер 😎
     "Экспортер",
 
