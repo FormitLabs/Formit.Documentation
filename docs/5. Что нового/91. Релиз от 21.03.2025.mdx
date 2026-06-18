@@ -1,0 +1,77 @@
+---
+slug: /changelog/21-03-2025
+---
+
+import rezulkeoImage from "@site/docs/resources/new/rezul keo.mp4";
+import skofImage from "@site/docs/resources/new/skof.gif";
+import psrImage from "@site/docs/resources/new/psr.gif";
+import formImage from "@site/docs/resources/new/form.gif";
+import nastrImage from "@site/docs/resources/new/nastr.png";
+import failImage from "@site/docs/resources/new/fail.png";
+import parametrImage from "@site/docs/resources/new/parametr.png";
+import ploshImage from "@site/docs/resources/new/plosh.png";
+import yglovieImage from "@site/docs/resources/new/yglovie.gif";
+import otshetImage from "@site/docs/resources/new/otshet.gif";
+
+***
+
+## Обновления Formit ПД
+### Инсоляция
+**Реализация поддержки угловых окон**
+
+Теперь сервис разбивает семейство окна на светопроёмы, определяет инсоляцию для каждого из окон (<ImageLink to="corner-windows"/>).
+Результатом является сумма инсоляции светопроёмов за исключением общих интервалов.
+
+Пример:
+1. Окно 1 инсолируется с 12:00 до 16:00.
+2. Окно 2 инсолируется с 13:40 до 15:20.
+3. Общее время непрерывной инсоляции с 12:00 до 15:20 (3 часа 20 минут).
+
+<Image image={yglovieImage} id="corner-windows" width="100%" title="Расчет угловых окон"/>
+
+### КЕО
+- Улучшение учета козырьков при балконах и лоджиях в КЕО.
+
+**Сохранение результатов расчета КЕО**
+
+Теперь, если вы закрыли вкладку/браузер, последние расчеты сохранятся и будут отображаться во вкладке (видео 1).
+<video src={rezulkeoImage} width="100%" autoplay="true" controls="true" />
+<div style={{textAlign: 'center'}}>"Видео 1 - Сохранение результатов КЕО"</div>
+
+**Разделение библиотек материалов отделки**
+
+Ранее была общая библиотека, что могло привести к неверному выбору коэффициента. Мы разделили их для вашего удобства:
+Расчет коэффициента отражения фасада (<ImageLink to="ro-f"/>) и внутреннего отражения помещения (<ImageLink to="ro-average"/>).
+<Image image={skofImage} id="ro-f" width="100%" title="Коэффициент отражения фасада"/>
+<Image image={psrImage} id="ro-average" width="100%" title="Коэффициент отражения внутренних поверхностей"/>
+
+**Улучшение определение форм в разделе настроек КЕО.**
+
+Теперь при выборе формы на главном экране для вашего удобства подсвечивается форма для назначения средневзвешенного коэффициента отражения фасада (<ImageLink to="form-highlight"/>).
+<Image image={formImage} id="form-highlight" width="100%" title="Подсвечивание форм"/>
+
+### Отчет
+**Блоки ситуационных и графических планов**
+
+При формировании планов расчетных этажей и ситуационных планов будут отображаться только рассчитанные этажи, а также можно будет выбрать сразу несколько этажей для формирования нескольких планов в одно нажатие (<ImageLink to="report-improvements"/>).
+<Image image={otshetImage} id="report-improvements" width="100%" title="Формирование отчета. планы этажей и ситуационный план"/>
+
+## Обновления Formit Conception
+### Экспортер
+**Добавление пользовательских названий для синхронизируемых форм**
+
+В сервисе Концепция реализован выбор параметра для переноса названия форм из Revit в сервис.
+Для этого через Экспортер или Новый проект переходите во вкладку "Настройки" (<ImageLink to="settings"/>).
+<Image image={nastrImage} id="settings" width="100%" title="Настройки"/>
+Первая вкладка - "Именование форм".
+
+Здесь вы выбираете файл, в котором находится параметр, отвечающий за имя формы (<ImageLink to="file-select"/>), далее выбираете тот параметр, который используется для названия (<ImageLink to="parameter-select"/>). Нажимаете кнопку "Сохранить".
+<Image image={failImage} id="file-select" width="100%" title="Выбираем файл для определения параметра"/>
+<Image image={parametrImage} id="parameter-select" width="100%" title="Выбираем сам параметр"/>
+
+**Добавление пользовательских параметров для определения площадок**
+
+Вторая вкладка - "Определение площадок" (<ImageLink to="areas-detection"/>).
+
+Если в параметре "Группа модели" вы используете любое другое слово, кроме "Площадка", то вам необходимо данное название вписать в поле ввода во вкладке "Определение площадок". Это необходимо для того чтобы сервис мог различить площадки, иначе они экспортируются как обычные перекрытия.
+<Image image={ploshImage} id="areas-detection" width="100%" title="Параметр для отображения площадок "/>

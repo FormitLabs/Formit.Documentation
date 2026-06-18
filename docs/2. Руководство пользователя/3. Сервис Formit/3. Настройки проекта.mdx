@@ -1,0 +1,28 @@
+---
+slug: /manual/formit/project-settings
+---
+
+import settingsImage from "@site/docs/resources/prosettings/settings.png";
+import generalImage from "@site/docs/resources/prosettings/general.png";
+import obtypeImage from "@site/docs/resources/prosettings/obtype.png";
+import applyImage from "@site/docs/resources/prosettings/apply.png";
+
+***
+
+Перед началом расчетов необходимо произвести настройки проекта. Нажимаем на кнопку *"Настройки проекта"* (<ImageLink to="settings-button"/>).
+
+<Image image={settingsImage} id="settings-button" title='Кнопка "Настройки проекта"'/>
+
+Общие настройки (<ImageLink to="general-settings"/>) осуществляются в зависимости от особенностей построения модели. К примеру, вы экспортировали ограждения, а они относятся к категории "Обобщенная модель". Ограждения не влияют на поиск точки, поэтому следует отключить эту опцию и т.д.
+
+<Image image={generalImage} id="general-settings" width="75%" title="Общие настройки проекта"/>
+
+Переходим в раздел *Типы объектов*. Здесь можно определить здание, этаж, помещение к *Жилому*, либо *Общественному* типу (<ImageLink to="element-types"/>).
+
+<Image image={obtypeImage} id="element-types" width="75%" title="Настройка типа объектов"/>
+
+Для сохранения настроек нажимаем кнопку *"Применить"* (<ImageLink to="apply-button"/>).
+
+<Image image={applyImage} id="apply-button" width="75%" title="Применение настроек проекта"/>
+
+Проект готов к расчету!

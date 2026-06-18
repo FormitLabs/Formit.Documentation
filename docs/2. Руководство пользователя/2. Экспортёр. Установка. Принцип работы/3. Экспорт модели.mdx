@@ -1,0 +1,121 @@
+---
+slug: /manual/exporter/model-export
+---
+
+import newprImage from "@site/docs/resources/frame/newpr.png";
+import nameImage from "@site/docs/resources/exp/name.png";
+import npnImage from "@site/docs/resources/frame/npn.png";
+import pkeImage from "@site/docs/resources/frame/pke.png";
+import npkImage from "@site/docs/resources/frame/npk.png";
+import snkImage from "@site/docs/resources/frame/snk.png";
+import sozdanieImage from "@site/docs/resources/exp/sozdanie.png";
+import gifImage from "@site/docs/resources/exp/gif1.gif";
+import zakrImage from "@site/docs/resources/exp/zakr.png";
+import nkvImage from "@site/docs/resources/exp/nkv.png";
+import endImage from "@site/docs/resources/exp/end.gif";
+import vhodImage from "@site/docs/resources/frame/vhod.png";
+import knoImage from "@site/docs/resources/frame/kno.png";
+import ekImage from "@site/docs/resources/frame/ek.png";
+import giImage from "@site/docs/resources/frame/gi.gif";
+import exImage from "@site/docs/resources/frame/ex.png";
+
+***
+
+Находясь на 3D-виде (настроенном вручную, либо автоматически - "Formit_ExportView", пользователь нажимает кнопку *“Экспортер”* (<ImageLink to="export-button"/>) во вкладке *Formit Exporter*.
+
+<Image image={ekImage} id="export-button" title='Кнопка "Экспортёр"'/>
+
+Далее, если пользователь ранее не входил в свой профиль, необходимо пройти авторизацию (<ImageLink to="auth"/>). В открывшемся окне *“Авторизация”* нажимаем кнопку *“Войти”*, осуществляется переход на страницу входа в браузере.
+
+<Image image={vhodImage} id="auth" title="Авторизация пользователя"/>
+
+Пользователь вводит свой логин и пароль.  
+Приступаем к экспорту модели.
+
+## 1. *Создание нового проекта*
+
+В открывшемся окне экспорта мы можем *создать новый проект* (<ImageLink to="new-project-button"/>, <ImageLink to="new-project-modal"/>). На этом этапе можно подтвердить создание проекта или отменить это действие.
+
+<Image image={newprImage} id="new-project-button"  title='Кнопка "Создать новый проект"'/>
+
+:::info Важно
+
+Название должно быть уникальным. Экспортер не позволит конвертировать модель при совпадении с наименованием ранее экспортированной модели.
+
+:::
+
+<Image image={nameImage} id="new-project-modal" width="60%" title="Окно создания нового проекта"/>
+
+Нажимаем *“Создать проект”* (<ImageLink to="new-project-modal"/>).
+
+Также вы можете найти проект, ранее экспортированный на сервис, для того, чтобы осуществить его замену (<ImageLink to="search"/>).
+
+<Image image={npnImage} id="search" title="Поиск по названию"/>
+
+При выделении необходимого названия появится кнопка *“Перейти к экспорту”* (<ImageLink to="setup-export"/>).
+
+<Image image={pkeImage} id="setup-export" title='Кнопка "Перейти к экспорту"'/>
+
+Итак, после выбора или создания нового проекта, мы переходим к пошаговой настройке экспортируемого проекта.
+
+## 2. *Формирование зданий*
+
+Слева поле *“Документы”* - список из связанных файлов и основного документа, справа поле *“Экспорт”*. Все перенесенные сюда файлы будут экспортированы, а оставшиеся слева файлы будут пропущены во время экспорта.
+
+ Кнопка 1:1 (<ImageLink to="each-document-as-building"/>) - это возможность перенести все имеющиеся файлы в правое поле, как отдельные здания.
+
+<Image image={knoImage} id="each-document-as-building" title="Кнопка 1:1"/>
+
+Чтобы объединять связанные файлы в одно здание (если составляющие одного здания лежат в разных связанных файлах), либо переносить их частично, необходимо воспользоваться кнопкой *“+ Добавить новое здание”*. Активируются кнопки переноса документов. Создаём здания для экспорта, посредством группировки файлов, перемещения их в правое поле. При необходимости редактируем наименования (<ImageLink to="merge-documents"/>).
+
+ <Image image={giImage} id="merge-documents" title="Пример объединения связанных файлов в одно здание"/>
+
+Как только сформирован список зданий, нажимаем *“Продолжить”*.
+
+## 3. *Настройка квартирографии*
+
+Приступаем к добавлению и настройке квартирографий.
+
+Если в проекте используются квартирографии ADSK либо AltecSystems, экспортер автоматически выберет нужную и заполнит поля для каждого здания.  
+
+Если же квартирография кастомная - открываем меню *“Настройка пользовательских квартирографий”* (<ImageLink to="quartography-setup"/>).
+С помощью этой функции мы можем создавать уникальные квартирографии.
+
+<Image image={npkImage} id="quartography-setup" title='Кнопка "Настройка пользовательских квартирографий"'/>
+
+Нажимаем *“Создать новую квартирографию”* (<ImageLink to="new-quartography"/>).
+
+<Image image={snkImage} id="new-quartography" title='Кнопка "Создать новую квартирографию"'/>
+
+<Image image={sozdanieImage} id="quartography-modal" title="Меню создания квартирографии"/>
+
+
+Задаём имя. 
+В поле *“Документ с квартирографией”* (<ImageLink to="quartography-modal"/>) в выпадающем меню выбираем связанный файл, в котором настроена квартирография (если она идентична для всех файлов, выбираем любой).
+
+Для следующих блоков из выпадающего списка выбираем соответствующие параметры. (<ImageLink to="quartography-params"/>)
+
+<Image image={gifImage} id="quartography-params" title="Выбор параметров кастомной квартирографии"/>
+
+В поле *“Значение параметра”* нужно написать слово /коэффициент/ число и т.п., который для выбранного параметра идентифицируют жилое помещение, балкон, лоджию. После заполнения всех полей активируется кнопка *“Сохранить”*. Квартирография успешно создана.
+
+<Image image={zakrImage} id="quartography-exit" title="Выход из режима настройки пользовательской квартирографии"/>
+
+Возвращаемся в меню назначения квартирографии (<ImageLink to="quartography-exit"/>). Ваша квартирография появится в выпадающем списке (<ImageLink to="quartography-list"/>) для каждого сформированного здания. Заполняем все поля, нажимаем *"экспортировать"* (<ImageLink to="start-export"/>).
+
+<Image image={nkvImage} id="quartography-list" width="40%" title="Выбор новой (пользовательской) квартирографии"/>
+
+<Image image={exImage} id="start-export" title="Начать процесс экспорта"/>
+
+## 4. *Экспорт модели*
+
+После нажатия кнопки *“Экспортировать”*, отображается ход конвертации, по окончании всплывет уведомление о завершении экспорта (<ImageLink to="export-finished"/>). Модель появится в вашем ЛК.
+
+Если экспорт прошел успешно, пользователь видит уведомление об окончании экспорта.
+
+<Image image={endImage} id="export-finished" title="Оповещение о завершении экспорта"/>
+
+
+Нажимаем *“ОК”*.
+Закрываем окно и по ссылке переходим в браузер, в сервис Formit.
+
