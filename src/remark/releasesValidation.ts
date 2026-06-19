@@ -122,7 +122,8 @@ const plugin = (options: ReleasesValidationOptions) => {
         }
 
         // TODO: выводить логи в зависимости от .env
-        console.info("releases-validation processing: ", file.path);
+        // TODO: #shatr - реализовать, что только локально выводится, ломает билд
+        // console.info("releases-validation processing: ", file.path);
 
         // TODO: добавить проверку на наличие `***` и на то, что он один + в самом начале
 
