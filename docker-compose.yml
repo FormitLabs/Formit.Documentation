@@ -2,8 +2,8 @@ version: "3"
 
 services:
   docusaurus:
-    image: ghcr.io/altecsystems/amaterasudocumentation_docusaurus:latest 
-    container_name: docusaurus
+    image: ghcr.io/formitlabs/amaterasudocs:latest
+    container_name: documentation
     ports:
       - '3000:3000'
     networks:

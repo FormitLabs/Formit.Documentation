@@ -12,7 +12,8 @@ const plugin = () => {
 
     const transformer = async (ast: Root, file: VFile) => {
         // TODO: выводить логи в зависимости от .env
-        console.info("auto-numbering processing: ", file.path);
+        // TODO: #shatr - реализовать, что только локально выводится, ломает билд
+        // console.info("auto-numbering processing: ", file.path);
 
 
         // TODO: если потребуется, можно добавить индексацию видео вложений и т.д.
